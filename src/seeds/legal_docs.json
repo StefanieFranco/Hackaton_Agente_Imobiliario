@@ -1,0 +1,20 @@
+[
+  {
+    "id": "LEG-001",
+    "tipo": "juridico",
+    "titulo": "Checklist documentação compra e venda",
+    "conteudo": "Documentos fictícios usuais: RG/CPF comprador e vendedor, matrícula atualizada, certidões negativas, IPTU quitado, declaração de quitação de condomínio. Escritura em cartório e registro na matrícula concluem a transferência."
+  },
+  {
+    "id": "LEG-002",
+    "tipo": "juridico",
+    "titulo": "Cláusulas comuns de contrato de locação comercial",
+    "conteudo": "Contratos comerciais fictícios costumam prever prazo mínimo, reajuste anual, caição ou seguro-fiança, uso permitido do imóvel e responsabilidade por reformas. Rescisão antecipada pode gerar multa proporcional."
+  },
+  {
+    "id": "LEG-003",
+    "tipo": "juridico",
+    "titulo": "FAQ ITBI e registro",
+    "conteudo": "ITBI é tributo municipal sobre transmissão onerosa. Alíquota fictícia típica em SP é discutida em percentuais locais. O registro no Cartório de Imóveis é o que transfere a propriedade perante terceiros."
+  }
+]

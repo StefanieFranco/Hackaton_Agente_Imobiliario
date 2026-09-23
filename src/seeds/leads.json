@@ -1,0 +1,338 @@
+[
+  {
+    "id": "LEAD-001",
+    "nome": "João Silva",
+    "email": "joao.silva@email.com",
+    "telefone": "(11) 91111-0001",
+    "origem": "google",
+    "status": "novo",
+    "chat_finalizado": false,
+    "preferencias_resumo": "Interesse em residencial próximo a Pinheiros.",
+    "ultimas_buscas": [
+      {
+        "bairro": "Pinheiros",
+        "segmento": "residencial",
+        "preco_max": 950000,
+        "em": "2026-09-21T22:42:30.840679"
+      },
+      {
+        "bairro": "Brooklin",
+        "segmento": "residencial",
+        "preco_max": 1200000,
+        "em": "2026-09-22T22:42:30.840679"
+      }
+    ],
+    "seller_id": "SEL-002",
+    "created_at": "2026-09-04T01:42:30.840679",
+    "last_interaction_at": "2026-09-22T22:42:30.840679",
+    "last_contact_at": null
+  },
+  {
+    "id": "LEAD-002",
+    "nome": "Maria Oliveira",
+    "email": "maria.oliveira@email.com",
+    "telefone": "(11) 91111-0002",
+    "origem": "quinto_andar",
+    "status": "interessado",
+    "chat_finalizado": false,
+    "preferencias_resumo": "Interesse em empresarial próximo a Vila Mariana.",
+    "ultimas_buscas": [
+      {
+        "bairro": "Vila Mariana",
+        "segmento": "empresarial",
+        "preco_max": 1000000,
+        "em": "2026-09-21T19:42:30.840679"
+      },
+      {
+        "bairro": "Itaim Bibi",
+        "segmento": "empresarial",
+        "preco_max": 1200000,
+        "em": "2026-09-22T19:42:30.840679"
+      }
+    ],
+    "seller_id": "SEL-003",
+    "created_at": "2026-09-05T01:42:30.840679",
+    "last_interaction_at": "2026-09-22T19:42:30.840679",
+    "last_contact_at": null
+  },
+  {
+    "id": "LEAD-003",
+    "nome": "Pedro Santos",
+    "email": "pedro.santos@email.com",
+    "telefone": "(11) 91111-0003",
+    "origem": "zap",
+    "status": "negociacao",
+    "chat_finalizado": false,
+    "preferencias_resumo": "Interesse em residencial próximo a Brooklin.",
+    "ultimas_buscas": [
+      {
+        "bairro": "Brooklin",
+        "segmento": "residencial",
+        "preco_max": 1050000,
+        "em": "2026-09-21T16:42:30.840679"
+      },
+      {
+        "bairro": "Perdizes",
+        "segmento": "residencial",
+        "preco_max": 1200000,
+        "em": "2026-09-22T16:42:30.840679"
+      }
+    ],
+    "seller_id": "SEL-004",
+    "created_at": "2026-09-06T01:42:30.840679",
+    "last_interaction_at": "2026-09-22T16:42:30.840679",
+    "last_contact_at": null
+  },
+  {
+    "id": "LEAD-004",
+    "nome": "Juliana Rocha",
+    "email": "juliana.rocha@email.com",
+    "telefone": "(11) 91111-0004",
+    "origem": "indicacao",
+    "status": "comprado",
+    "chat_finalizado": false,
+    "preferencias_resumo": "Interesse em empresarial próximo a Itaim Bibi.",
+    "ultimas_buscas": [
+      {
+        "bairro": "Itaim Bibi",
+        "segmento": "empresarial",
+        "preco_max": 1100000,
+        "em": "2026-09-21T13:42:30.840679"
+      },
+      {
+        "bairro": "Santana",
+        "segmento": "empresarial",
+        "preco_max": 1200000,
+        "em": "2026-09-22T13:42:30.840679"
+      }
+    ],
+    "seller_id": "SEL-005",
+    "created_at": "2026-09-07T01:42:30.840679",
+    "last_interaction_at": "2026-09-22T13:42:30.840679",
+    "last_contact_at": null
+  },
+  {
+    "id": "LEAD-005",
+    "nome": "Rafael Nunes",
+    "email": "rafael.nunes@email.com",
+    "telefone": "(11) 91111-0005",
+    "origem": "direto",
+    "status": "finalizado",
+    "chat_finalizado": true,
+    "preferencias_resumo": "Interesse em residencial próximo a Perdizes.",
+    "ultimas_buscas": [
+      {
+        "bairro": "Perdizes",
+        "segmento": "residencial",
+        "preco_max": 1150000,
+        "em": "2026-09-21T01:42:30.840679"
+      },
+      {
+        "bairro": "Tatuapé",
+        "segmento": "residencial",
+        "preco_max": 1200000,
+        "em": "2026-09-22T01:42:30.840679"
+      }
+    ],
+    "seller_id": "SEL-001",
+    "created_at": "2026-09-08T01:42:30.840679",
+    "last_interaction_at": "2026-09-22T01:42:30.840679",
+    "last_contact_at": null
+  },
+  {
+    "id": "LEAD-006",
+    "nome": "Fernanda Dias",
+    "email": "fernanda.dias@email.com",
+    "telefone": "(11) 91111-0006",
+    "origem": "google",
+    "status": "interessado",
+    "chat_finalizado": false,
+    "preferencias_resumo": "Interesse em empresarial próximo a Santana.",
+    "ultimas_buscas": [
+      {
+        "bairro": "Santana",
+        "segmento": "empresarial",
+        "preco_max": 1200000,
+        "em": "2026-09-21T07:42:30.840679"
+      },
+      {
+        "bairro": "Mooca",
+        "segmento": "empresarial",
+        "preco_max": 1200000,
+        "em": "2026-09-22T07:42:30.840679"
+      }
+    ],
+    "seller_id": "SEL-002",
+    "created_at": "2026-09-09T01:42:30.840679",
+    "last_interaction_at": "2026-09-22T07:42:30.840679",
+    "last_contact_at": null
+  },
+  {
+    "id": "LEAD-007",
+    "nome": "Lucas Pereira",
+    "email": "lucas.pereira@email.com",
+    "telefone": "(11) 91111-0007",
+    "origem": "quinto_andar",
+    "status": "novo",
+    "chat_finalizado": false,
+    "preferencias_resumo": "Interesse em residencial próximo a Tatuapé.",
+    "ultimas_buscas": [
+      {
+        "bairro": "Tatuapé",
+        "segmento": "residencial",
+        "preco_max": 1250000,
+        "em": "2026-09-21T04:42:30.840679"
+      },
+      {
+        "bairro": "Lapa",
+        "segmento": "residencial",
+        "preco_max": 1200000,
+        "em": "2026-09-22T04:42:30.840679"
+      }
+    ],
+    "seller_id": "SEL-003",
+    "created_at": "2026-09-10T01:42:30.840679",
+    "last_interaction_at": "2026-09-22T04:42:30.840679",
+    "last_contact_at": null
+  },
+  {
+    "id": "LEAD-008",
+    "nome": "Patricia Gomes",
+    "email": "patricia.gomes@email.com",
+    "telefone": "(11) 91111-0008",
+    "origem": "zap",
+    "status": "interessado",
+    "chat_finalizado": false,
+    "preferencias_resumo": "Interesse em empresarial próximo a Mooca.",
+    "ultimas_buscas": [
+      {
+        "bairro": "Mooca",
+        "segmento": "empresarial",
+        "preco_max": 1300000,
+        "em": "2026-09-21T01:42:30.840679"
+      },
+      {
+        "bairro": "Campo Belo",
+        "segmento": "empresarial",
+        "preco_max": 1200000,
+        "em": "2026-09-22T01:42:30.840679"
+      }
+    ],
+    "seller_id": "SEL-004",
+    "created_at": "2026-09-11T01:42:30.840679",
+    "last_interaction_at": "2026-09-22T01:42:30.840679",
+    "last_contact_at": null
+  },
+  {
+    "id": "LEAD-009",
+    "nome": "André Barbosa",
+    "email": "andre.barbosa@email.com",
+    "telefone": "(11) 91111-0009",
+    "origem": "indicacao",
+    "status": "negociacao",
+    "chat_finalizado": false,
+    "preferencias_resumo": "Interesse em residencial próximo a Lapa.",
+    "ultimas_buscas": [
+      {
+        "bairro": "Lapa",
+        "segmento": "residencial",
+        "preco_max": 1350000,
+        "em": "2026-09-20T22:42:30.840679"
+      },
+      {
+        "bairro": "Vila Olímpia",
+        "segmento": "residencial",
+        "preco_max": 1200000,
+        "em": "2026-09-21T22:42:30.840679"
+      }
+    ],
+    "seller_id": "SEL-005",
+    "created_at": "2026-09-12T01:42:30.840679",
+    "last_interaction_at": "2026-09-21T22:42:30.840679",
+    "last_contact_at": null
+  },
+  {
+    "id": "LEAD-010",
+    "nome": "Camila Freitas",
+    "email": "camila.freitas@email.com",
+    "telefone": "(11) 91111-0010",
+    "origem": "direto",
+    "status": "interessado",
+    "chat_finalizado": false,
+    "preferencias_resumo": "Interesse em empresarial próximo a Campo Belo.",
+    "ultimas_buscas": [
+      {
+        "bairro": "Campo Belo",
+        "segmento": "empresarial",
+        "preco_max": 1400000,
+        "em": "2026-09-16T01:42:30.840679"
+      },
+      {
+        "bairro": "Jardins",
+        "segmento": "empresarial",
+        "preco_max": 1200000,
+        "em": "2026-09-17T01:42:30.840679"
+      }
+    ],
+    "seller_id": "SEL-001",
+    "created_at": "2026-09-13T01:42:30.840679",
+    "last_interaction_at": "2026-09-17T01:42:30.840679",
+    "last_contact_at": "2026-09-15T01:42:30.840679"
+  },
+  {
+    "id": "LEAD-011",
+    "nome": "Thiago Martins",
+    "email": "thiago.martins@email.com",
+    "telefone": "(11) 91111-0011",
+    "origem": "google",
+    "status": "interessado",
+    "chat_finalizado": false,
+    "preferencias_resumo": "Interesse em residencial próximo a Vila Olímpia.",
+    "ultimas_buscas": [
+      {
+        "bairro": "Vila Olímpia",
+        "segmento": "residencial",
+        "preco_max": 1450000,
+        "em": "2026-09-15T01:42:30.840679"
+      },
+      {
+        "bairro": "Consolação",
+        "segmento": "residencial",
+        "preco_max": 1200000,
+        "em": "2026-09-16T01:42:30.840679"
+      }
+    ],
+    "seller_id": "SEL-002",
+    "created_at": "2026-09-14T01:42:30.840679",
+    "last_interaction_at": "2026-09-16T01:42:30.840679",
+    "last_contact_at": "2026-09-14T01:42:30.840679"
+  },
+  {
+    "id": "LEAD-012",
+    "nome": "Beatriz Ramos",
+    "email": "beatriz.ramos@email.com",
+    "telefone": "(11) 91111-0012",
+    "origem": "quinto_andar",
+    "status": "interessado",
+    "chat_finalizado": false,
+    "preferencias_resumo": "Interesse em empresarial próximo a Jardins.",
+    "ultimas_buscas": [
+      {
+        "bairro": "Jardins",
+        "segmento": "empresarial",
+        "preco_max": 1500000,
+        "em": "2026-09-17T01:42:30.840679"
+      },
+      {
+        "bairro": "Liberdade",
+        "segmento": "empresarial",
+        "preco_max": 1200000,
+        "em": "2026-09-18T01:42:30.840679"
+      }
+    ],
+    "seller_id": "SEL-003",
+    "created_at": "2026-09-15T01:42:30.840679",
+    "last_interaction_at": "2026-09-18T01:42:30.840679",
+    "last_contact_at": "2026-09-16T01:42:30.840679"
+  }
+]

@@ -1,0 +1,68 @@
+[
+  {
+    "id": "MKT-Moema",
+    "tipo": "mercado",
+    "titulo": "Panorama de mercado — Moema",
+    "conteudo": "O bairro Moema em São Paulo apresenta demanda estável por imóveis residenciais de 2 e 3 dormitórios. Preços médios fictícios variam conforme proximidade ao metrô. Para o segmento empresarial, salas comerciais de 40–80 m² têm boa liquidez. Investidores devem observar vacância e ticket médio. Documento seed para RAG."
+  },
+  {
+    "id": "MKT-Pinheiros",
+    "tipo": "mercado",
+    "titulo": "Panorama de mercado — Pinheiros",
+    "conteudo": "O bairro Pinheiros em São Paulo apresenta demanda estável por imóveis residenciais de 2 e 3 dormitórios. Preços médios fictícios variam conforme proximidade ao metrô. Para o segmento empresarial, salas comerciais de 40–80 m² têm boa liquidez. Investidores devem observar vacância e ticket médio. Documento seed para RAG."
+  },
+  {
+    "id": "MKT-Vila-Mariana",
+    "tipo": "mercado",
+    "titulo": "Panorama de mercado — Vila Mariana",
+    "conteudo": "O bairro Vila Mariana em São Paulo apresenta demanda estável por imóveis residenciais de 2 e 3 dormitórios. Preços médios fictícios variam conforme proximidade ao metrô. Para o segmento empresarial, salas comerciais de 40–80 m² têm boa liquidez. Investidores devem observar vacância e ticket médio. Documento seed para RAG."
+  },
+  {
+    "id": "MKT-Brooklin",
+    "tipo": "mercado",
+    "titulo": "Panorama de mercado — Brooklin",
+    "conteudo": "O bairro Brooklin em São Paulo apresenta demanda estável por imóveis residenciais de 2 e 3 dormitórios. Preços médios fictícios variam conforme proximidade ao metrô. Para o segmento empresarial, salas comerciais de 40–80 m² têm boa liquidez. Investidores devem observar vacância e ticket médio. Documento seed para RAG."
+  },
+  {
+    "id": "MKT-Itaim-Bibi",
+    "tipo": "mercado",
+    "titulo": "Panorama de mercado — Itaim Bibi",
+    "conteudo": "O bairro Itaim Bibi em São Paulo apresenta demanda estável por imóveis residenciais de 2 e 3 dormitórios. Preços médios fictícios variam conforme proximidade ao metrô. Para o segmento empresarial, salas comerciais de 40–80 m² têm boa liquidez. Investidores devem observar vacância e ticket médio. Documento seed para RAG."
+  },
+  {
+    "id": "MKT-Perdizes",
+    "tipo": "mercado",
+    "titulo": "Panorama de mercado — Perdizes",
+    "conteudo": "O bairro Perdizes em São Paulo apresenta demanda estável por imóveis residenciais de 2 e 3 dormitórios. Preços médios fictícios variam conforme proximidade ao metrô. Para o segmento empresarial, salas comerciais de 40–80 m² têm boa liquidez. Investidores devem observar vacância e ticket médio. Documento seed para RAG."
+  },
+  {
+    "id": "MKT-Santana",
+    "tipo": "mercado",
+    "titulo": "Panorama de mercado — Santana",
+    "conteudo": "O bairro Santana em São Paulo apresenta demanda estável por imóveis residenciais de 2 e 3 dormitórios. Preços médios fictícios variam conforme proximidade ao metrô. Para o segmento empresarial, salas comerciais de 40–80 m² têm boa liquidez. Investidores devem observar vacância e ticket médio. Documento seed para RAG."
+  },
+  {
+    "id": "MKT-Tatuapé",
+    "tipo": "mercado",
+    "titulo": "Panorama de mercado — Tatuapé",
+    "conteudo": "O bairro Tatuapé em São Paulo apresenta demanda estável por imóveis residenciais de 2 e 3 dormitórios. Preços médios fictícios variam conforme proximidade ao metrô. Para o segmento empresarial, salas comerciais de 40–80 m² têm boa liquidez. Investidores devem observar vacância e ticket médio. Documento seed para RAG."
+  },
+  {
+    "id": "MKT-Mooca",
+    "tipo": "mercado",
+    "titulo": "Panorama de mercado — Mooca",
+    "conteudo": "O bairro Mooca em São Paulo apresenta demanda estável por imóveis residenciais de 2 e 3 dormitórios. Preços médios fictícios variam conforme proximidade ao metrô. Para o segmento empresarial, salas comerciais de 40–80 m² têm boa liquidez. Investidores devem observar vacância e ticket médio. Documento seed para RAG."
+  },
+  {
+    "id": "MKT-Lapa",
+    "tipo": "mercado",
+    "titulo": "Panorama de mercado — Lapa",
+    "conteudo": "O bairro Lapa em São Paulo apresenta demanda estável por imóveis residenciais de 2 e 3 dormitórios. Preços médios fictícios variam conforme proximidade ao metrô. Para o segmento empresarial, salas comerciais de 40–80 m² têm boa liquidez. Investidores devem observar vacância e ticket médio. Documento seed para RAG."
+  },
+  {
+    "id": "MKT-ABC",
+    "tipo": "mercado",
+    "titulo": "Mercado ABC Paulista",
+    "conteudo": "A região do ABC concentra demanda por galpões logísticos e casas familiares. Valores fictícios por m² são tipicamente inferiores aos de Moema e Itaim. Útil para comparar residencial vs empresarial no RAG."
+  }
+]

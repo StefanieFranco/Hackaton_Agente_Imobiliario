@@ -1,0 +1,37 @@
+[
+  {
+    "id": "SEL-001",
+    "nome": "Ana Souza",
+    "email": "ana.souza@imobdemo.com",
+    "telefone": "(11) 90000-1001",
+    "especialidade": "residencial"
+  },
+  {
+    "id": "SEL-002",
+    "nome": "Bruno Lima",
+    "email": "bruno.lima@imobdemo.com",
+    "telefone": "(11) 90000-1002",
+    "especialidade": "empresarial"
+  },
+  {
+    "id": "SEL-003",
+    "nome": "Carla Mendes",
+    "email": "carla.mendes@imobdemo.com",
+    "telefone": "(11) 90000-1003",
+    "especialidade": "geral"
+  },
+  {
+    "id": "SEL-004",
+    "nome": "Diego Alves",
+    "email": "diego.alves@imobdemo.com",
+    "telefone": "(11) 90000-1004",
+    "especialidade": "residencial"
+  },
+  {
+    "id": "SEL-005",
+    "nome": "Elena Costa",
+    "email": "elena.costa@imobdemo.com",
+    "telefone": "(11) 90000-1005",
+    "especialidade": "empresarial"
+  }
+]

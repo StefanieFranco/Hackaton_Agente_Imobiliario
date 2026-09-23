@@ -1,0 +1,1406 @@
+[
+  {
+    "id": "COM-001",
+    "titulo": "Escritorio em Brooklin",
+    "segmento": "empresarial",
+    "tipo": "escritorio",
+    "bairro": "Brooklin",
+    "cidade": "São Paulo",
+    "preco": 504835.23,
+    "area_m2": 83.0,
+    "quartos": null,
+    "vagas": 10,
+    "salas": 3,
+    "descricao": "Imóvel empresarial fictício (escritorio) em Brooklin, São Paulo. Área útil de 83 m². Excelente para operação comercial/industrial. Código COM-001.",
+    "amenities": [
+      "acesso 24h",
+      "ar-condicionado",
+      "gerador"
+    ],
+    "image_urls": [
+      "https://picsum.photos/seed/COM-001-1/800/600",
+      "https://picsum.photos/seed/COM-001-2/800/600",
+      "https://picsum.photos/seed/COM-001-3/800/600",
+      "https://picsum.photos/seed/COM-001-4/800/600"
+    ],
+    "lat": -23.61608624016065,
+    "lng": -46.72026102018203
+  },
+  {
+    "id": "COM-002",
+    "titulo": "Loja em Santana",
+    "segmento": "empresarial",
+    "tipo": "loja",
+    "bairro": "Santana",
+    "cidade": "São Paulo",
+    "preco": 346017.82,
+    "area_m2": 41.0,
+    "quartos": null,
+    "vagas": 2,
+    "salas": null,
+    "descricao": "Imóvel empresarial fictício (loja) em Santana, São Paulo. Área útil de 41 m². Excelente para operação comercial/industrial. Código COM-002.",
+    "amenities": [
+      "estacionamento",
+      "copa",
+      "fibra ótica",
+      "ar-condicionado"
+    ],
+    "image_urls": [
+      "https://picsum.photos/seed/COM-002-1/800/600",
+      "https://picsum.photos/seed/COM-002-2/800/600",
+      "https://picsum.photos/seed/COM-002-3/800/600",
+      "https://picsum.photos/seed/COM-002-4/800/600"
+    ],
+    "lat": -23.497596980280242,
+    "lng": -46.66480645978218
+  },
+  {
+    "id": "COM-003",
+    "titulo": "Galpao em Lapa",
+    "segmento": "empresarial",
+    "tipo": "galpao",
+    "bairro": "Lapa",
+    "cidade": "São Paulo",
+    "preco": 1675174.0,
+    "area_m2": 502.0,
+    "quartos": null,
+    "vagas": 3,
+    "salas": null,
+    "descricao": "Imóvel empresarial fictício (galpao) em Lapa, São Paulo. Área útil de 502 m². Excelente para operação comercial/industrial. Código COM-003.",
+    "amenities": [
+      "ar-condicionado",
+      "acesso 24h",
+      "fibra ótica",
+      "estacionamento"
+    ],
+    "image_urls": [
+      "https://picsum.photos/seed/COM-003-1/800/600",
+      "https://picsum.photos/seed/COM-003-2/800/600",
+      "https://picsum.photos/seed/COM-003-3/800/600",
+      "https://picsum.photos/seed/COM-003-4/800/600"
+    ],
+    "lat": -23.657947587566248,
+    "lng": -46.70524051610201
+  },
+  {
+    "id": "COM-004",
+    "titulo": "Sala Comercial em Jardins",
+    "segmento": "empresarial",
+    "tipo": "sala_comercial",
+    "bairro": "Jardins",
+    "cidade": "São Paulo",
+    "preco": 621829.59,
+    "area_m2": 84.0,
+    "quartos": null,
+    "vagas": 17,
+    "salas": 2,
+    "descricao": "Imóvel empresarial fictício (sala_comercial) em Jardins, São Paulo. Área útil de 84 m². Excelente para operação comercial/industrial. Código COM-004.",
+    "amenities": [
+      "gerador",
+      "estacionamento",
+      "fibra ótica",
+      "copa",
+      "acesso 24h"
+    ],
+    "image_urls": [
+      "https://picsum.photos/seed/COM-004-1/800/600",
+      "https://picsum.photos/seed/COM-004-2/800/600",
+      "https://picsum.photos/seed/COM-004-3/800/600",
+      "https://picsum.photos/seed/COM-004-4/800/600"
+    ],
+    "lat": -23.562980733101593,
+    "lng": -46.732252627737104
+  },
+  {
+    "id": "COM-005",
+    "titulo": "Escritorio em Santo André Centro",
+    "segmento": "empresarial",
+    "tipo": "escritorio",
+    "bairro": "Santo André Centro",
+    "cidade": "Santo André",
+    "preco": 1781907.45,
+    "area_m2": 270.0,
+    "quartos": null,
+    "vagas": 8,
+    "salas": 8,
+    "descricao": "Imóvel empresarial fictício (escritorio) em Santo André Centro, Santo André. Área útil de 270 m². Excelente para operação comercial/industrial. Código COM-005.",
+    "amenities": [
+      "estacionamento",
+      "copa",
+      "ar-condicionado",
+      "gerador",
+      "fibra ótica"
+    ],
+    "image_urls": [
+      "https://picsum.photos/seed/COM-005-1/800/600",
+      "https://picsum.photos/seed/COM-005-2/800/600",
+      "https://picsum.photos/seed/COM-005-3/800/600",
+      "https://picsum.photos/seed/COM-005-4/800/600"
+    ],
+    "lat": -23.651403995072464,
+    "lng": -46.69428155474106
+  },
+  {
+    "id": "COM-006",
+    "titulo": "Loja em Diadema Centro",
+    "segmento": "empresarial",
+    "tipo": "loja",
+    "bairro": "Diadema Centro",
+    "cidade": "Diadema",
+    "preco": 756932.51,
+    "area_m2": 115.0,
+    "quartos": null,
+    "vagas": 4,
+    "salas": null,
+    "descricao": "Imóvel empresarial fictício (loja) em Diadema Centro, Diadema. Área útil de 115 m². Excelente para operação comercial/industrial. Código COM-006.",
+    "amenities": [
+      "estacionamento",
+      "copa",
+      "ar-condicionado"
+    ],
+    "image_urls": [
+      "https://picsum.photos/seed/COM-006-1/800/600",
+      "https://picsum.photos/seed/COM-006-2/800/600",
+      "https://picsum.photos/seed/COM-006-3/800/600",
+      "https://picsum.photos/seed/COM-006-4/800/600"
+    ],
+    "lat": -23.500459405993308,
+    "lng": -46.76073134478584
+  },
+  {
+    "id": "COM-007",
+    "titulo": "Galpao em Vila Mariana",
+    "segmento": "empresarial",
+    "tipo": "galpao",
+    "bairro": "Vila Mariana",
+    "cidade": "São Paulo",
+    "preco": 2914353.0,
+    "area_m2": 1311.0,
+    "quartos": null,
+    "vagas": 13,
+    "salas": null,
+    "descricao": "Imóvel empresarial fictício (galpao) em Vila Mariana, São Paulo. Área útil de 1311 m². Excelente para operação comercial/industrial. Código COM-007.",
+    "amenities": [
+      "acesso 24h",
+      "fibra ótica",
+      "recepção",
+      "estacionamento"
+    ],
+    "image_urls": [
+      "https://picsum.photos/seed/COM-007-1/800/600",
+      "https://picsum.photos/seed/COM-007-2/800/600",
+      "https://picsum.photos/seed/COM-007-3/800/600",
+      "https://picsum.photos/seed/COM-007-4/800/600"
+    ],
+    "lat": -23.555524864186236,
+    "lng": -46.49717750276977
+  },
+  {
+    "id": "COM-008",
+    "titulo": "Sala Comercial em Perdizes",
+    "segmento": "empresarial",
+    "tipo": "sala_comercial",
+    "bairro": "Perdizes",
+    "cidade": "São Paulo",
+    "preco": 912468.26,
+    "area_m2": 120.0,
+    "quartos": null,
+    "vagas": 19,
+    "salas": 5,
+    "descricao": "Imóvel empresarial fictício (sala_comercial) em Perdizes, São Paulo. Área útil de 120 m². Excelente para operação comercial/industrial. Código COM-008.",
+    "amenities": [
+      "estacionamento",
+      "ar-condicionado",
+      "gerador"
+    ],
+    "image_urls": [
+      "https://picsum.photos/seed/COM-008-1/800/600",
+      "https://picsum.photos/seed/COM-008-2/800/600",
+      "https://picsum.photos/seed/COM-008-3/800/600",
+      "https://picsum.photos/seed/COM-008-4/800/600"
+    ],
+    "lat": -23.565399365748807,
+    "lng": -46.771292554015986
+  },
+  {
+    "id": "COM-009",
+    "titulo": "Escritorio em Mooca",
+    "segmento": "empresarial",
+    "tipo": "escritorio",
+    "bairro": "Mooca",
+    "cidade": "São Paulo",
+    "preco": 1679316.95,
+    "area_m2": 247.0,
+    "quartos": null,
+    "vagas": 19,
+    "salas": 6,
+    "descricao": "Imóvel empresarial fictício (escritorio) em Mooca, São Paulo. Área útil de 247 m². Excelente para operação comercial/industrial. Código COM-009.",
+    "amenities": [
+      "recepção",
+      "estacionamento",
+      "fibra ótica",
+      "acesso 24h",
+      "copa"
+    ],
+    "image_urls": [
+      "https://picsum.photos/seed/COM-009-1/800/600",
+      "https://picsum.photos/seed/COM-009-2/800/600",
+      "https://picsum.photos/seed/COM-009-3/800/600",
+      "https://picsum.photos/seed/COM-009-4/800/600"
+    ],
+    "lat": -23.51574008447776,
+    "lng": -46.73929015383084
+  },
+  {
+    "id": "COM-010",
+    "titulo": "Loja em Vila Olímpia",
+    "segmento": "empresarial",
+    "tipo": "loja",
+    "bairro": "Vila Olímpia",
+    "cidade": "São Paulo",
+    "preco": 579641.63,
+    "area_m2": 76.0,
+    "quartos": null,
+    "vagas": 6,
+    "salas": null,
+    "descricao": "Imóvel empresarial fictício (loja) em Vila Olímpia, São Paulo. Área útil de 76 m². Excelente para operação comercial/industrial. Código COM-010.",
+    "amenities": [
+      "gerador",
+      "acesso 24h",
+      "estacionamento",
+      "copa"
+    ],
+    "image_urls": [
+      "https://picsum.photos/seed/COM-010-1/800/600",
+      "https://picsum.photos/seed/COM-010-2/800/600",
+      "https://picsum.photos/seed/COM-010-3/800/600",
+      "https://picsum.photos/seed/COM-010-4/800/600"
+    ],
+    "lat": -23.489517642346854,
+    "lng": -46.53042271445342
+  },
+  {
+    "id": "COM-011",
+    "titulo": "Galpao em Liberdade",
+    "segmento": "empresarial",
+    "tipo": "galpao",
+    "bairro": "Liberdade",
+    "cidade": "São Paulo",
+    "preco": 2216678.0,
+    "area_m2": 1163.0,
+    "quartos": null,
+    "vagas": 11,
+    "salas": null,
+    "descricao": "Imóvel empresarial fictício (galpao) em Liberdade, São Paulo. Área útil de 1163 m². Excelente para operação comercial/industrial. Código COM-011.",
+    "amenities": [
+      "copa",
+      "recepção",
+      "acesso 24h"
+    ],
+    "image_urls": [
+      "https://picsum.photos/seed/COM-011-1/800/600",
+      "https://picsum.photos/seed/COM-011-2/800/600",
+      "https://picsum.photos/seed/COM-011-3/800/600",
+      "https://picsum.photos/seed/COM-011-4/800/600"
+    ],
+    "lat": -23.488984031025716,
+    "lng": -46.4951164801852
+  },
+  {
+    "id": "COM-012",
+    "titulo": "Sala Comercial em São Caetano Centro",
+    "segmento": "empresarial",
+    "tipo": "sala_comercial",
+    "bairro": "São Caetano Centro",
+    "cidade": "São Caetano do Sul",
+    "preco": 317826.46,
+    "area_m2": 55.0,
+    "quartos": null,
+    "vagas": 3,
+    "salas": 4,
+    "descricao": "Imóvel empresarial fictício (sala_comercial) em São Caetano Centro, São Caetano do Sul. Área útil de 55 m². Excelente para operação comercial/industrial. Código COM-012.",
+    "amenities": [
+      "ar-condicionado",
+      "estacionamento",
+      "gerador",
+      "fibra ótica",
+      "recepção"
+    ],
+    "image_urls": [
+      "https://picsum.photos/seed/COM-012-1/800/600",
+      "https://picsum.photos/seed/COM-012-2/800/600",
+      "https://picsum.photos/seed/COM-012-3/800/600",
+      "https://picsum.photos/seed/COM-012-4/800/600"
+    ],
+    "lat": -23.524585753785527,
+    "lng": -46.49087957676964
+  },
+  {
+    "id": "COM-013",
+    "titulo": "Escritorio em Pinheiros",
+    "segmento": "empresarial",
+    "tipo": "escritorio",
+    "bairro": "Pinheiros",
+    "cidade": "São Paulo",
+    "preco": 561396.12,
+    "area_m2": 123.0,
+    "quartos": null,
+    "vagas": 9,
+    "salas": 2,
+    "descricao": "Imóvel empresarial fictício (escritorio) em Pinheiros, São Paulo. Área útil de 123 m². Excelente para operação comercial/industrial. Código COM-013.",
+    "amenities": [
+      "copa",
+      "estacionamento",
+      "acesso 24h",
+      "ar-condicionado",
+      "recepção"
+    ],
+    "image_urls": [
+      "https://picsum.photos/seed/COM-013-1/800/600",
+      "https://picsum.photos/seed/COM-013-2/800/600",
+      "https://picsum.photos/seed/COM-013-3/800/600",
+      "https://picsum.photos/seed/COM-013-4/800/600"
+    ],
+    "lat": -23.527896513300036,
+    "lng": -46.530828509865906
+  },
+  {
+    "id": "COM-014",
+    "titulo": "Loja em Itaim Bibi",
+    "segmento": "empresarial",
+    "tipo": "loja",
+    "bairro": "Itaim Bibi",
+    "cidade": "São Paulo",
+    "preco": 519457.47,
+    "area_m2": 56.0,
+    "quartos": null,
+    "vagas": 19,
+    "salas": null,
+    "descricao": "Imóvel empresarial fictício (loja) em Itaim Bibi, São Paulo. Área útil de 56 m². Excelente para operação comercial/industrial. Código COM-014.",
+    "amenities": [
+      "acesso 24h",
+      "fibra ótica",
+      "recepção"
+    ],
+    "image_urls": [
+      "https://picsum.photos/seed/COM-014-1/800/600",
+      "https://picsum.photos/seed/COM-014-2/800/600",
+      "https://picsum.photos/seed/COM-014-3/800/600",
+      "https://picsum.photos/seed/COM-014-4/800/600"
+    ],
+    "lat": -23.586671096325972,
+    "lng": -46.65148659602958
+  },
+  {
+    "id": "COM-015",
+    "titulo": "Galpao em Tatuapé",
+    "segmento": "empresarial",
+    "tipo": "galpao",
+    "bairro": "Tatuapé",
+    "cidade": "São Paulo",
+    "preco": 3287760.0,
+    "area_m2": 1236.0,
+    "quartos": null,
+    "vagas": 15,
+    "salas": null,
+    "descricao": "Imóvel empresarial fictício (galpao) em Tatuapé, São Paulo. Área útil de 1236 m². Excelente para operação comercial/industrial. Código COM-015.",
+    "amenities": [
+      "estacionamento",
+      "gerador",
+      "acesso 24h"
+    ],
+    "image_urls": [
+      "https://picsum.photos/seed/COM-015-1/800/600",
+      "https://picsum.photos/seed/COM-015-2/800/600",
+      "https://picsum.photos/seed/COM-015-3/800/600",
+      "https://picsum.photos/seed/COM-015-4/800/600"
+    ],
+    "lat": -23.50024592551054,
+    "lng": -46.6493538564977
+  },
+  {
+    "id": "COM-016",
+    "titulo": "Sala Comercial em Campo Belo",
+    "segmento": "empresarial",
+    "tipo": "sala_comercial",
+    "bairro": "Campo Belo",
+    "cidade": "São Paulo",
+    "preco": 630176.3,
+    "area_m2": 80.0,
+    "quartos": null,
+    "vagas": 18,
+    "salas": 5,
+    "descricao": "Imóvel empresarial fictício (sala_comercial) em Campo Belo, São Paulo. Área útil de 80 m². Excelente para operação comercial/industrial. Código COM-016.",
+    "amenities": [
+      "gerador",
+      "ar-condicionado",
+      "recepção",
+      "acesso 24h"
+    ],
+    "image_urls": [
+      "https://picsum.photos/seed/COM-016-1/800/600",
+      "https://picsum.photos/seed/COM-016-2/800/600",
+      "https://picsum.photos/seed/COM-016-3/800/600",
+      "https://picsum.photos/seed/COM-016-4/800/600"
+    ],
+    "lat": -23.458408515839334,
+    "lng": -46.706840968242716
+  },
+  {
+    "id": "COM-017",
+    "titulo": "Escritorio em Consolação",
+    "segmento": "empresarial",
+    "tipo": "escritorio",
+    "bairro": "Consolação",
+    "cidade": "São Paulo",
+    "preco": 1767868.2,
+    "area_m2": 331.0,
+    "quartos": null,
+    "vagas": 15,
+    "salas": 8,
+    "descricao": "Imóvel empresarial fictício (escritorio) em Consolação, São Paulo. Área útil de 331 m². Excelente para operação comercial/industrial. Código COM-017.",
+    "amenities": [
+      "ar-condicionado",
+      "estacionamento",
+      "acesso 24h",
+      "gerador"
+    ],
+    "image_urls": [
+      "https://picsum.photos/seed/COM-017-1/800/600",
+      "https://picsum.photos/seed/COM-017-2/800/600",
+      "https://picsum.photos/seed/COM-017-3/800/600",
+      "https://picsum.photos/seed/COM-017-4/800/600"
+    ],
+    "lat": -23.47852023436126,
+    "lng": -46.677898347050714
+  },
+  {
+    "id": "COM-018",
+    "titulo": "Loja em São Bernardo Centro",
+    "segmento": "empresarial",
+    "tipo": "loja",
+    "bairro": "São Bernardo Centro",
+    "cidade": "São Bernardo do Campo",
+    "preco": 810819.54,
+    "area_m2": 100.0,
+    "quartos": null,
+    "vagas": 6,
+    "salas": null,
+    "descricao": "Imóvel empresarial fictício (loja) em São Bernardo Centro, São Bernardo do Campo. Área útil de 100 m². Excelente para operação comercial/industrial. Código COM-018.",
+    "amenities": [
+      "ar-condicionado",
+      "copa",
+      "estacionamento"
+    ],
+    "image_urls": [
+      "https://picsum.photos/seed/COM-018-1/800/600",
+      "https://picsum.photos/seed/COM-018-2/800/600",
+      "https://picsum.photos/seed/COM-018-3/800/600",
+      "https://picsum.photos/seed/COM-018-4/800/600"
+    ],
+    "lat": -23.552741316756293,
+    "lng": -46.55255060395526
+  },
+  {
+    "id": "COM-019",
+    "titulo": "Galpao em Moema",
+    "segmento": "empresarial",
+    "tipo": "galpao",
+    "bairro": "Moema",
+    "cidade": "São Paulo",
+    "preco": 3040595.0,
+    "area_m2": 1657.0,
+    "quartos": null,
+    "vagas": 2,
+    "salas": null,
+    "descricao": "Imóvel empresarial fictício (galpao) em Moema, São Paulo. Área útil de 1657 m². Excelente para operação comercial/industrial. Código COM-019.",
+    "amenities": [
+      "ar-condicionado",
+      "estacionamento",
+      "acesso 24h",
+      "gerador"
+    ],
+    "image_urls": [
+      "https://picsum.photos/seed/COM-019-1/800/600",
+      "https://picsum.photos/seed/COM-019-2/800/600",
+      "https://picsum.photos/seed/COM-019-3/800/600",
+      "https://picsum.photos/seed/COM-019-4/800/600"
+    ],
+    "lat": -23.510649594816766,
+    "lng": -46.669293864801695
+  },
+  {
+    "id": "COM-020",
+    "titulo": "Sala Comercial em Brooklin",
+    "segmento": "empresarial",
+    "tipo": "sala_comercial",
+    "bairro": "Brooklin",
+    "cidade": "São Paulo",
+    "preco": 525599.54,
+    "area_m2": 70.0,
+    "quartos": null,
+    "vagas": 8,
+    "salas": 6,
+    "descricao": "Imóvel empresarial fictício (sala_comercial) em Brooklin, São Paulo. Área útil de 70 m². Excelente para operação comercial/industrial. Código COM-020.",
+    "amenities": [
+      "gerador",
+      "ar-condicionado",
+      "recepção",
+      "copa"
+    ],
+    "image_urls": [
+      "https://picsum.photos/seed/COM-020-1/800/600",
+      "https://picsum.photos/seed/COM-020-2/800/600",
+      "https://picsum.photos/seed/COM-020-3/800/600",
+      "https://picsum.photos/seed/COM-020-4/800/600"
+    ],
+    "lat": -23.594268493438562,
+    "lng": -46.557135680908274
+  },
+  {
+    "id": "COM-021",
+    "titulo": "Escritorio em Santana",
+    "segmento": "empresarial",
+    "tipo": "escritorio",
+    "bairro": "Santana",
+    "cidade": "São Paulo",
+    "preco": 716392.37,
+    "area_m2": 138.0,
+    "quartos": null,
+    "vagas": 18,
+    "salas": 3,
+    "descricao": "Imóvel empresarial fictício (escritorio) em Santana, São Paulo. Área útil de 138 m². Excelente para operação comercial/industrial. Código COM-021.",
+    "amenities": [
+      "fibra ótica",
+      "gerador",
+      "recepção",
+      "ar-condicionado",
+      "estacionamento"
+    ],
+    "image_urls": [
+      "https://picsum.photos/seed/COM-021-1/800/600",
+      "https://picsum.photos/seed/COM-021-2/800/600",
+      "https://picsum.photos/seed/COM-021-3/800/600",
+      "https://picsum.photos/seed/COM-021-4/800/600"
+    ],
+    "lat": -23.615404040764187,
+    "lng": -46.72616753689438
+  },
+  {
+    "id": "COM-022",
+    "titulo": "Loja em Lapa",
+    "segmento": "empresarial",
+    "tipo": "loja",
+    "bairro": "Lapa",
+    "cidade": "São Paulo",
+    "preco": 1072244.62,
+    "area_m2": 166.0,
+    "quartos": null,
+    "vagas": 1,
+    "salas": null,
+    "descricao": "Imóvel empresarial fictício (loja) em Lapa, São Paulo. Área útil de 166 m². Excelente para operação comercial/industrial. Código COM-022.",
+    "amenities": [
+      "gerador",
+      "copa",
+      "ar-condicionado",
+      "estacionamento",
+      "recepção"
+    ],
+    "image_urls": [
+      "https://picsum.photos/seed/COM-022-1/800/600",
+      "https://picsum.photos/seed/COM-022-2/800/600",
+      "https://picsum.photos/seed/COM-022-3/800/600",
+      "https://picsum.photos/seed/COM-022-4/800/600"
+    ],
+    "lat": -23.460547263600354,
+    "lng": -46.607780734112104
+  },
+  {
+    "id": "COM-023",
+    "titulo": "Galpao em Jardins",
+    "segmento": "empresarial",
+    "tipo": "galpao",
+    "bairro": "Jardins",
+    "cidade": "São Paulo",
+    "preco": 2099310.0,
+    "area_m2": 1102.0,
+    "quartos": null,
+    "vagas": 8,
+    "salas": null,
+    "descricao": "Imóvel empresarial fictício (galpao) em Jardins, São Paulo. Área útil de 1102 m². Excelente para operação comercial/industrial. Código COM-023.",
+    "amenities": [
+      "recepção",
+      "acesso 24h",
+      "estacionamento",
+      "fibra ótica"
+    ],
+    "image_urls": [
+      "https://picsum.photos/seed/COM-023-1/800/600",
+      "https://picsum.photos/seed/COM-023-2/800/600",
+      "https://picsum.photos/seed/COM-023-3/800/600",
+      "https://picsum.photos/seed/COM-023-4/800/600"
+    ],
+    "lat": -23.652220279138646,
+    "lng": -46.591166287914405
+  },
+  {
+    "id": "COM-024",
+    "titulo": "Sala Comercial em Santo André Centro",
+    "segmento": "empresarial",
+    "tipo": "sala_comercial",
+    "bairro": "Santo André Centro",
+    "cidade": "Santo André",
+    "preco": 799995.56,
+    "area_m2": 97.0,
+    "quartos": null,
+    "vagas": 2,
+    "salas": 1,
+    "descricao": "Imóvel empresarial fictício (sala_comercial) em Santo André Centro, Santo André. Área útil de 97 m². Excelente para operação comercial/industrial. Código COM-024.",
+    "amenities": [
+      "recepção",
+      "fibra ótica",
+      "estacionamento"
+    ],
+    "image_urls": [
+      "https://picsum.photos/seed/COM-024-1/800/600",
+      "https://picsum.photos/seed/COM-024-2/800/600",
+      "https://picsum.photos/seed/COM-024-3/800/600",
+      "https://picsum.photos/seed/COM-024-4/800/600"
+    ],
+    "lat": -23.52448376370169,
+    "lng": -46.54277775104698
+  },
+  {
+    "id": "COM-025",
+    "titulo": "Escritorio em Diadema Centro",
+    "segmento": "empresarial",
+    "tipo": "escritorio",
+    "bairro": "Diadema Centro",
+    "cidade": "Diadema",
+    "preco": 1609718.53,
+    "area_m2": 307.0,
+    "quartos": null,
+    "vagas": 18,
+    "salas": 4,
+    "descricao": "Imóvel empresarial fictício (escritorio) em Diadema Centro, Diadema. Área útil de 307 m². Excelente para operação comercial/industrial. Código COM-025.",
+    "amenities": [
+      "gerador",
+      "fibra ótica",
+      "copa",
+      "recepção"
+    ],
+    "image_urls": [
+      "https://picsum.photos/seed/COM-025-1/800/600",
+      "https://picsum.photos/seed/COM-025-2/800/600",
+      "https://picsum.photos/seed/COM-025-3/800/600",
+      "https://picsum.photos/seed/COM-025-4/800/600"
+    ],
+    "lat": -23.52368858106117,
+    "lng": -46.55797320835464
+  },
+  {
+    "id": "COM-026",
+    "titulo": "Loja em Vila Mariana",
+    "segmento": "empresarial",
+    "tipo": "loja",
+    "bairro": "Vila Mariana",
+    "cidade": "São Paulo",
+    "preco": 1636184.71,
+    "area_m2": 190.0,
+    "quartos": null,
+    "vagas": 5,
+    "salas": null,
+    "descricao": "Imóvel empresarial fictício (loja) em Vila Mariana, São Paulo. Área útil de 190 m². Excelente para operação comercial/industrial. Código COM-026.",
+    "amenities": [
+      "ar-condicionado",
+      "fibra ótica",
+      "recepção"
+    ],
+    "image_urls": [
+      "https://picsum.photos/seed/COM-026-1/800/600",
+      "https://picsum.photos/seed/COM-026-2/800/600",
+      "https://picsum.photos/seed/COM-026-3/800/600",
+      "https://picsum.photos/seed/COM-026-4/800/600"
+    ],
+    "lat": -23.632432172293647,
+    "lng": -46.657444728201995
+  },
+  {
+    "id": "COM-027",
+    "titulo": "Galpao em Perdizes",
+    "segmento": "empresarial",
+    "tipo": "galpao",
+    "bairro": "Perdizes",
+    "cidade": "São Paulo",
+    "preco": 2584612.0,
+    "area_m2": 796.0,
+    "quartos": null,
+    "vagas": 9,
+    "salas": null,
+    "descricao": "Imóvel empresarial fictício (galpao) em Perdizes, São Paulo. Área útil de 796 m². Excelente para operação comercial/industrial. Código COM-027.",
+    "amenities": [
+      "acesso 24h",
+      "estacionamento",
+      "recepção",
+      "ar-condicionado",
+      "copa"
+    ],
+    "image_urls": [
+      "https://picsum.photos/seed/COM-027-1/800/600",
+      "https://picsum.photos/seed/COM-027-2/800/600",
+      "https://picsum.photos/seed/COM-027-3/800/600",
+      "https://picsum.photos/seed/COM-027-4/800/600"
+    ],
+    "lat": -23.480921273604785,
+    "lng": -46.59248259785073
+  },
+  {
+    "id": "COM-028",
+    "titulo": "Sala Comercial em Mooca",
+    "segmento": "empresarial",
+    "tipo": "sala_comercial",
+    "bairro": "Mooca",
+    "cidade": "São Paulo",
+    "preco": 389173.92,
+    "area_m2": 53.0,
+    "quartos": null,
+    "vagas": 8,
+    "salas": 4,
+    "descricao": "Imóvel empresarial fictício (sala_comercial) em Mooca, São Paulo. Área útil de 53 m². Excelente para operação comercial/industrial. Código COM-028.",
+    "amenities": [
+      "recepção",
+      "acesso 24h",
+      "ar-condicionado"
+    ],
+    "image_urls": [
+      "https://picsum.photos/seed/COM-028-1/800/600",
+      "https://picsum.photos/seed/COM-028-2/800/600",
+      "https://picsum.photos/seed/COM-028-3/800/600",
+      "https://picsum.photos/seed/COM-028-4/800/600"
+    ],
+    "lat": -23.47976914410422,
+    "lng": -46.60148678880418
+  },
+  {
+    "id": "COM-029",
+    "titulo": "Escritorio em Vila Olímpia",
+    "segmento": "empresarial",
+    "tipo": "escritorio",
+    "bairro": "Vila Olímpia",
+    "cidade": "São Paulo",
+    "preco": 1388700.19,
+    "area_m2": 264.0,
+    "quartos": null,
+    "vagas": 12,
+    "salas": 5,
+    "descricao": "Imóvel empresarial fictício (escritorio) em Vila Olímpia, São Paulo. Área útil de 264 m². Excelente para operação comercial/industrial. Código COM-029.",
+    "amenities": [
+      "fibra ótica",
+      "acesso 24h",
+      "estacionamento",
+      "copa"
+    ],
+    "image_urls": [
+      "https://picsum.photos/seed/COM-029-1/800/600",
+      "https://picsum.photos/seed/COM-029-2/800/600",
+      "https://picsum.photos/seed/COM-029-3/800/600",
+      "https://picsum.photos/seed/COM-029-4/800/600"
+    ],
+    "lat": -23.650693955544167,
+    "lng": -46.76804176474492
+  },
+  {
+    "id": "COM-030",
+    "titulo": "Loja em Liberdade",
+    "segmento": "empresarial",
+    "tipo": "loja",
+    "bairro": "Liberdade",
+    "cidade": "São Paulo",
+    "preco": 715739.04,
+    "area_m2": 112.0,
+    "quartos": null,
+    "vagas": 7,
+    "salas": null,
+    "descricao": "Imóvel empresarial fictício (loja) em Liberdade, São Paulo. Área útil de 112 m². Excelente para operação comercial/industrial. Código COM-030.",
+    "amenities": [
+      "acesso 24h",
+      "fibra ótica",
+      "copa",
+      "recepção",
+      "gerador"
+    ],
+    "image_urls": [
+      "https://picsum.photos/seed/COM-030-1/800/600",
+      "https://picsum.photos/seed/COM-030-2/800/600",
+      "https://picsum.photos/seed/COM-030-3/800/600",
+      "https://picsum.photos/seed/COM-030-4/800/600"
+    ],
+    "lat": -23.47285890113799,
+    "lng": -46.60712590461918
+  },
+  {
+    "id": "COM-031",
+    "titulo": "Galpao em São Caetano Centro",
+    "segmento": "empresarial",
+    "tipo": "galpao",
+    "bairro": "São Caetano Centro",
+    "cidade": "São Caetano do Sul",
+    "preco": 2989678.0,
+    "area_m2": 1262.0,
+    "quartos": null,
+    "vagas": 5,
+    "salas": null,
+    "descricao": "Imóvel empresarial fictício (galpao) em São Caetano Centro, São Caetano do Sul. Área útil de 1262 m². Excelente para operação comercial/industrial. Código COM-031.",
+    "amenities": [
+      "estacionamento",
+      "copa",
+      "acesso 24h",
+      "recepção",
+      "ar-condicionado"
+    ],
+    "image_urls": [
+      "https://picsum.photos/seed/COM-031-1/800/600",
+      "https://picsum.photos/seed/COM-031-2/800/600",
+      "https://picsum.photos/seed/COM-031-3/800/600",
+      "https://picsum.photos/seed/COM-031-4/800/600"
+    ],
+    "lat": -23.586489346489284,
+    "lng": -46.680007481900475
+  },
+  {
+    "id": "COM-032",
+    "titulo": "Sala Comercial em Pinheiros",
+    "segmento": "empresarial",
+    "tipo": "sala_comercial",
+    "bairro": "Pinheiros",
+    "cidade": "São Paulo",
+    "preco": 778164.0,
+    "area_m2": 113.0,
+    "quartos": null,
+    "vagas": 12,
+    "salas": 2,
+    "descricao": "Imóvel empresarial fictício (sala_comercial) em Pinheiros, São Paulo. Área útil de 113 m². Excelente para operação comercial/industrial. Código COM-032.",
+    "amenities": [
+      "recepção",
+      "estacionamento",
+      "acesso 24h",
+      "gerador",
+      "ar-condicionado"
+    ],
+    "image_urls": [
+      "https://picsum.photos/seed/COM-032-1/800/600",
+      "https://picsum.photos/seed/COM-032-2/800/600",
+      "https://picsum.photos/seed/COM-032-3/800/600",
+      "https://picsum.photos/seed/COM-032-4/800/600"
+    ],
+    "lat": -23.59241429129376,
+    "lng": -46.488944581957426
+  },
+  {
+    "id": "COM-033",
+    "titulo": "Escritorio em Itaim Bibi",
+    "segmento": "empresarial",
+    "tipo": "escritorio",
+    "bairro": "Itaim Bibi",
+    "cidade": "São Paulo",
+    "preco": 1713447.08,
+    "area_m2": 303.0,
+    "quartos": null,
+    "vagas": 1,
+    "salas": 7,
+    "descricao": "Imóvel empresarial fictício (escritorio) em Itaim Bibi, São Paulo. Área útil de 303 m². Excelente para operação comercial/industrial. Código COM-033.",
+    "amenities": [
+      "fibra ótica",
+      "gerador",
+      "acesso 24h"
+    ],
+    "image_urls": [
+      "https://picsum.photos/seed/COM-033-1/800/600",
+      "https://picsum.photos/seed/COM-033-2/800/600",
+      "https://picsum.photos/seed/COM-033-3/800/600",
+      "https://picsum.photos/seed/COM-033-4/800/600"
+    ],
+    "lat": -23.488453643026663,
+    "lng": -46.5923773773565
+  },
+  {
+    "id": "COM-034",
+    "titulo": "Loja em Tatuapé",
+    "segmento": "empresarial",
+    "tipo": "loja",
+    "bairro": "Tatuapé",
+    "cidade": "São Paulo",
+    "preco": 554200.8,
+    "area_m2": 82.0,
+    "quartos": null,
+    "vagas": 9,
+    "salas": null,
+    "descricao": "Imóvel empresarial fictício (loja) em Tatuapé, São Paulo. Área útil de 82 m². Excelente para operação comercial/industrial. Código COM-034.",
+    "amenities": [
+      "copa",
+      "estacionamento",
+      "recepção",
+      "fibra ótica"
+    ],
+    "image_urls": [
+      "https://picsum.photos/seed/COM-034-1/800/600",
+      "https://picsum.photos/seed/COM-034-2/800/600",
+      "https://picsum.photos/seed/COM-034-3/800/600",
+      "https://picsum.photos/seed/COM-034-4/800/600"
+    ],
+    "lat": -23.436444764202793,
+    "lng": -46.59733849987541
+  },
+  {
+    "id": "COM-035",
+    "titulo": "Galpao em Campo Belo",
+    "segmento": "empresarial",
+    "tipo": "galpao",
+    "bairro": "Campo Belo",
+    "cidade": "São Paulo",
+    "preco": 2202860.0,
+    "area_m2": 836.0,
+    "quartos": null,
+    "vagas": 2,
+    "salas": null,
+    "descricao": "Imóvel empresarial fictício (galpao) em Campo Belo, São Paulo. Área útil de 836 m². Excelente para operação comercial/industrial. Código COM-035.",
+    "amenities": [
+      "acesso 24h",
+      "recepção",
+      "estacionamento"
+    ],
+    "image_urls": [
+      "https://picsum.photos/seed/COM-035-1/800/600",
+      "https://picsum.photos/seed/COM-035-2/800/600",
+      "https://picsum.photos/seed/COM-035-3/800/600",
+      "https://picsum.photos/seed/COM-035-4/800/600"
+    ],
+    "lat": -23.442705421833754,
+    "lng": -46.585687093364875
+  },
+  {
+    "id": "COM-036",
+    "titulo": "Sala Comercial em Consolação",
+    "segmento": "empresarial",
+    "tipo": "sala_comercial",
+    "bairro": "Consolação",
+    "cidade": "São Paulo",
+    "preco": 715331.59,
+    "area_m2": 115.0,
+    "quartos": null,
+    "vagas": 15,
+    "salas": 3,
+    "descricao": "Imóvel empresarial fictício (sala_comercial) em Consolação, São Paulo. Área útil de 115 m². Excelente para operação comercial/industrial. Código COM-036.",
+    "amenities": [
+      "ar-condicionado",
+      "estacionamento",
+      "fibra ótica",
+      "acesso 24h"
+    ],
+    "image_urls": [
+      "https://picsum.photos/seed/COM-036-1/800/600",
+      "https://picsum.photos/seed/COM-036-2/800/600",
+      "https://picsum.photos/seed/COM-036-3/800/600",
+      "https://picsum.photos/seed/COM-036-4/800/600"
+    ],
+    "lat": -23.577939356820686,
+    "lng": -46.503439555020535
+  },
+  {
+    "id": "COM-037",
+    "titulo": "Escritorio em São Bernardo Centro",
+    "segmento": "empresarial",
+    "tipo": "escritorio",
+    "bairro": "São Bernardo Centro",
+    "cidade": "São Bernardo do Campo",
+    "preco": 401226.61,
+    "area_m2": 75.0,
+    "quartos": null,
+    "vagas": 16,
+    "salas": 3,
+    "descricao": "Imóvel empresarial fictício (escritorio) em São Bernardo Centro, São Bernardo do Campo. Área útil de 75 m². Excelente para operação comercial/industrial. Código COM-037.",
+    "amenities": [
+      "acesso 24h",
+      "recepção",
+      "gerador",
+      "fibra ótica"
+    ],
+    "image_urls": [
+      "https://picsum.photos/seed/COM-037-1/800/600",
+      "https://picsum.photos/seed/COM-037-2/800/600",
+      "https://picsum.photos/seed/COM-037-3/800/600",
+      "https://picsum.photos/seed/COM-037-4/800/600"
+    ],
+    "lat": -23.46900577857446,
+    "lng": -46.60602298483498
+  },
+  {
+    "id": "COM-038",
+    "titulo": "Loja em Moema",
+    "segmento": "empresarial",
+    "tipo": "loja",
+    "bairro": "Moema",
+    "cidade": "São Paulo",
+    "preco": 543673.25,
+    "area_m2": 68.0,
+    "quartos": null,
+    "vagas": 10,
+    "salas": null,
+    "descricao": "Imóvel empresarial fictício (loja) em Moema, São Paulo. Área útil de 68 m². Excelente para operação comercial/industrial. Código COM-038.",
+    "amenities": [
+      "acesso 24h",
+      "fibra ótica",
+      "estacionamento",
+      "copa",
+      "ar-condicionado"
+    ],
+    "image_urls": [
+      "https://picsum.photos/seed/COM-038-1/800/600",
+      "https://picsum.photos/seed/COM-038-2/800/600",
+      "https://picsum.photos/seed/COM-038-3/800/600",
+      "https://picsum.photos/seed/COM-038-4/800/600"
+    ],
+    "lat": -23.461295596023824,
+    "lng": -46.48576761060023
+  },
+  {
+    "id": "COM-039",
+    "titulo": "Galpao em Brooklin",
+    "segmento": "empresarial",
+    "tipo": "galpao",
+    "bairro": "Brooklin",
+    "cidade": "São Paulo",
+    "preco": 2598744.0,
+    "area_m2": 984.0,
+    "quartos": null,
+    "vagas": 1,
+    "salas": null,
+    "descricao": "Imóvel empresarial fictício (galpao) em Brooklin, São Paulo. Área útil de 984 m². Excelente para operação comercial/industrial. Código COM-039.",
+    "amenities": [
+      "copa",
+      "estacionamento",
+      "acesso 24h",
+      "fibra ótica"
+    ],
+    "image_urls": [
+      "https://picsum.photos/seed/COM-039-1/800/600",
+      "https://picsum.photos/seed/COM-039-2/800/600",
+      "https://picsum.photos/seed/COM-039-3/800/600",
+      "https://picsum.photos/seed/COM-039-4/800/600"
+    ],
+    "lat": -23.432780639534553,
+    "lng": -46.54228190179003
+  },
+  {
+    "id": "COM-040",
+    "titulo": "Sala Comercial em Santana",
+    "segmento": "empresarial",
+    "tipo": "sala_comercial",
+    "bairro": "Santana",
+    "cidade": "São Paulo",
+    "preco": 738349.41,
+    "area_m2": 89.0,
+    "quartos": null,
+    "vagas": 10,
+    "salas": 3,
+    "descricao": "Imóvel empresarial fictício (sala_comercial) em Santana, São Paulo. Área útil de 89 m². Excelente para operação comercial/industrial. Código COM-040.",
+    "amenities": [
+      "acesso 24h",
+      "estacionamento",
+      "recepção"
+    ],
+    "image_urls": [
+      "https://picsum.photos/seed/COM-040-1/800/600",
+      "https://picsum.photos/seed/COM-040-2/800/600",
+      "https://picsum.photos/seed/COM-040-3/800/600",
+      "https://picsum.photos/seed/COM-040-4/800/600"
+    ],
+    "lat": -23.543771739166186,
+    "lng": -46.64292157765773
+  },
+  {
+    "id": "COM-041",
+    "titulo": "Escritorio em Lapa",
+    "segmento": "empresarial",
+    "tipo": "escritorio",
+    "bairro": "Lapa",
+    "cidade": "São Paulo",
+    "preco": 1412757.9,
+    "area_m2": 249.0,
+    "quartos": null,
+    "vagas": 8,
+    "salas": 3,
+    "descricao": "Imóvel empresarial fictício (escritorio) em Lapa, São Paulo. Área útil de 249 m². Excelente para operação comercial/industrial. Código COM-041.",
+    "amenities": [
+      "fibra ótica",
+      "copa",
+      "estacionamento",
+      "recepção"
+    ],
+    "image_urls": [
+      "https://picsum.photos/seed/COM-041-1/800/600",
+      "https://picsum.photos/seed/COM-041-2/800/600",
+      "https://picsum.photos/seed/COM-041-3/800/600",
+      "https://picsum.photos/seed/COM-041-4/800/600"
+    ],
+    "lat": -23.465576329835834,
+    "lng": -46.524297599030234
+  },
+  {
+    "id": "COM-042",
+    "titulo": "Loja em Jardins",
+    "segmento": "empresarial",
+    "tipo": "loja",
+    "bairro": "Jardins",
+    "cidade": "São Paulo",
+    "preco": 1119569.9,
+    "area_m2": 127.0,
+    "quartos": null,
+    "vagas": 15,
+    "salas": null,
+    "descricao": "Imóvel empresarial fictício (loja) em Jardins, São Paulo. Área útil de 127 m². Excelente para operação comercial/industrial. Código COM-042.",
+    "amenities": [
+      "recepção",
+      "fibra ótica",
+      "acesso 24h",
+      "ar-condicionado",
+      "gerador"
+    ],
+    "image_urls": [
+      "https://picsum.photos/seed/COM-042-1/800/600",
+      "https://picsum.photos/seed/COM-042-2/800/600",
+      "https://picsum.photos/seed/COM-042-3/800/600",
+      "https://picsum.photos/seed/COM-042-4/800/600"
+    ],
+    "lat": -23.505744102142582,
+    "lng": -46.69378629878739
+  },
+  {
+    "id": "COM-043",
+    "titulo": "Galpao em Santo André Centro",
+    "segmento": "empresarial",
+    "tipo": "galpao",
+    "bairro": "Santo André Centro",
+    "cidade": "Santo André",
+    "preco": 3526208.0,
+    "area_m2": 1088.0,
+    "quartos": null,
+    "vagas": 3,
+    "salas": null,
+    "descricao": "Imóvel empresarial fictício (galpao) em Santo André Centro, Santo André. Área útil de 1088 m². Excelente para operação comercial/industrial. Código COM-043.",
+    "amenities": [
+      "ar-condicionado",
+      "copa",
+      "gerador",
+      "recepção"
+    ],
+    "image_urls": [
+      "https://picsum.photos/seed/COM-043-1/800/600",
+      "https://picsum.photos/seed/COM-043-2/800/600",
+      "https://picsum.photos/seed/COM-043-3/800/600",
+      "https://picsum.photos/seed/COM-043-4/800/600"
+    ],
+    "lat": -23.65896216751747,
+    "lng": -46.54115696045134
+  },
+  {
+    "id": "COM-044",
+    "titulo": "Sala Comercial em Diadema Centro",
+    "segmento": "empresarial",
+    "tipo": "sala_comercial",
+    "bairro": "Diadema Centro",
+    "cidade": "Diadema",
+    "preco": 263701.47,
+    "area_m2": 43.0,
+    "quartos": null,
+    "vagas": 13,
+    "salas": 5,
+    "descricao": "Imóvel empresarial fictício (sala_comercial) em Diadema Centro, Diadema. Área útil de 43 m². Excelente para operação comercial/industrial. Código COM-044.",
+    "amenities": [
+      "copa",
+      "ar-condicionado",
+      "acesso 24h",
+      "fibra ótica",
+      "recepção"
+    ],
+    "image_urls": [
+      "https://picsum.photos/seed/COM-044-1/800/600",
+      "https://picsum.photos/seed/COM-044-2/800/600",
+      "https://picsum.photos/seed/COM-044-3/800/600",
+      "https://picsum.photos/seed/COM-044-4/800/600"
+    ],
+    "lat": -23.523721971146752,
+    "lng": -46.66523671041494
+  },
+  {
+    "id": "COM-045",
+    "titulo": "Escritorio em Vila Mariana",
+    "segmento": "empresarial",
+    "tipo": "escritorio",
+    "bairro": "Vila Mariana",
+    "cidade": "São Paulo",
+    "preco": 1661945.19,
+    "area_m2": 294.0,
+    "quartos": null,
+    "vagas": 8,
+    "salas": 4,
+    "descricao": "Imóvel empresarial fictício (escritorio) em Vila Mariana, São Paulo. Área útil de 294 m². Excelente para operação comercial/industrial. Código COM-045.",
+    "amenities": [
+      "gerador",
+      "copa",
+      "recepção",
+      "estacionamento"
+    ],
+    "image_urls": [
+      "https://picsum.photos/seed/COM-045-1/800/600",
+      "https://picsum.photos/seed/COM-045-2/800/600",
+      "https://picsum.photos/seed/COM-045-3/800/600",
+      "https://picsum.photos/seed/COM-045-4/800/600"
+    ],
+    "lat": -23.45370973833627,
+    "lng": -46.57671673429028
+  },
+  {
+    "id": "COM-046",
+    "titulo": "Loja em Perdizes",
+    "segmento": "empresarial",
+    "tipo": "loja",
+    "bairro": "Perdizes",
+    "cidade": "São Paulo",
+    "preco": 468325.48,
+    "area_m2": 48.0,
+    "quartos": null,
+    "vagas": 9,
+    "salas": null,
+    "descricao": "Imóvel empresarial fictício (loja) em Perdizes, São Paulo. Área útil de 48 m². Excelente para operação comercial/industrial. Código COM-046.",
+    "amenities": [
+      "estacionamento",
+      "copa",
+      "gerador",
+      "acesso 24h",
+      "ar-condicionado"
+    ],
+    "image_urls": [
+      "https://picsum.photos/seed/COM-046-1/800/600",
+      "https://picsum.photos/seed/COM-046-2/800/600",
+      "https://picsum.photos/seed/COM-046-3/800/600",
+      "https://picsum.photos/seed/COM-046-4/800/600"
+    ],
+    "lat": -23.622187920213868,
+    "lng": -46.6645920253098
+  },
+  {
+    "id": "COM-047",
+    "titulo": "Galpao em Mooca",
+    "segmento": "empresarial",
+    "tipo": "galpao",
+    "bairro": "Mooca",
+    "cidade": "São Paulo",
+    "preco": 2039245.0,
+    "area_m2": 685.0,
+    "quartos": null,
+    "vagas": 9,
+    "salas": null,
+    "descricao": "Imóvel empresarial fictício (galpao) em Mooca, São Paulo. Área útil de 685 m². Excelente para operação comercial/industrial. Código COM-047.",
+    "amenities": [
+      "gerador",
+      "recepção",
+      "estacionamento",
+      "acesso 24h",
+      "copa"
+    ],
+    "image_urls": [
+      "https://picsum.photos/seed/COM-047-1/800/600",
+      "https://picsum.photos/seed/COM-047-2/800/600",
+      "https://picsum.photos/seed/COM-047-3/800/600",
+      "https://picsum.photos/seed/COM-047-4/800/600"
+    ],
+    "lat": -23.534177035930632,
+    "lng": -46.5742601521798
+  },
+  {
+    "id": "COM-048",
+    "titulo": "Sala Comercial em Vila Olímpia",
+    "segmento": "empresarial",
+    "tipo": "sala_comercial",
+    "bairro": "Vila Olímpia",
+    "cidade": "São Paulo",
+    "preco": 471360.6,
+    "area_m2": 61.0,
+    "quartos": null,
+    "vagas": 7,
+    "salas": 1,
+    "descricao": "Imóvel empresarial fictício (sala_comercial) em Vila Olímpia, São Paulo. Área útil de 61 m². Excelente para operação comercial/industrial. Código COM-048.",
+    "amenities": [
+      "acesso 24h",
+      "gerador",
+      "ar-condicionado",
+      "fibra ótica",
+      "copa"
+    ],
+    "image_urls": [
+      "https://picsum.photos/seed/COM-048-1/800/600",
+      "https://picsum.photos/seed/COM-048-2/800/600",
+      "https://picsum.photos/seed/COM-048-3/800/600",
+      "https://picsum.photos/seed/COM-048-4/800/600"
+    ],
+    "lat": -23.60984956798953,
+    "lng": -46.5533268028775
+  },
+  {
+    "id": "COM-049",
+    "titulo": "Escritorio em Liberdade",
+    "segmento": "empresarial",
+    "tipo": "escritorio",
+    "bairro": "Liberdade",
+    "cidade": "São Paulo",
+    "preco": 469237.57,
+    "area_m2": 89.0,
+    "quartos": null,
+    "vagas": 14,
+    "salas": 3,
+    "descricao": "Imóvel empresarial fictício (escritorio) em Liberdade, São Paulo. Área útil de 89 m². Excelente para operação comercial/industrial. Código COM-049.",
+    "amenities": [
+      "fibra ótica",
+      "gerador",
+      "ar-condicionado"
+    ],
+    "image_urls": [
+      "https://picsum.photos/seed/COM-049-1/800/600",
+      "https://picsum.photos/seed/COM-049-2/800/600",
+      "https://picsum.photos/seed/COM-049-3/800/600",
+      "https://picsum.photos/seed/COM-049-4/800/600"
+    ],
+    "lat": -23.64836798982091,
+    "lng": -46.691466864511256
+  },
+  {
+    "id": "COM-050",
+    "titulo": "Loja em São Caetano Centro",
+    "segmento": "empresarial",
+    "tipo": "loja",
+    "bairro": "São Caetano Centro",
+    "cidade": "São Caetano do Sul",
+    "preco": 669906.82,
+    "area_m2": 74.0,
+    "quartos": null,
+    "vagas": 11,
+    "salas": null,
+    "descricao": "Imóvel empresarial fictício (loja) em São Caetano Centro, São Caetano do Sul. Área útil de 74 m². Excelente para operação comercial/industrial. Código COM-050.",
+    "amenities": [
+      "fibra ótica",
+      "gerador",
+      "ar-condicionado",
+      "copa",
+      "acesso 24h"
+    ],
+    "image_urls": [
+      "https://picsum.photos/seed/COM-050-1/800/600",
+      "https://picsum.photos/seed/COM-050-2/800/600",
+      "https://picsum.photos/seed/COM-050-3/800/600",
+      "https://picsum.photos/seed/COM-050-4/800/600"
+    ],
+    "lat": -23.437827821719967,
+    "lng": -46.69145756524826
+  }
+]

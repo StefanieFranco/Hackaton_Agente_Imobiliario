@@ -1,0 +1,1396 @@
+[
+  {
+    "id": "RES-001",
+    "titulo": "Apartamento em Moema",
+    "segmento": "residencial",
+    "tipo": "apartamento",
+    "bairro": "Moema",
+    "cidade": "São Paulo",
+    "preco": 1160432.0,
+    "area_m2": 83.0,
+    "quartos": 4,
+    "vagas": 2,
+    "salas": null,
+    "descricao": "Imóvel residencial fictício (apartamento) no bairro Moema, São Paulo. Área de 83 m², 4 quarto(s). Ideal para famílias ou investidores. Código RES-001.",
+    "amenities": [
+      "academia",
+      "elevador",
+      "piscina"
+    ],
+    "image_urls": [
+      "https://picsum.photos/seed/RES-001-1/800/600",
+      "https://picsum.photos/seed/RES-001-2/800/600",
+      "https://picsum.photos/seed/RES-001-3/800/600",
+      "https://picsum.photos/seed/RES-001-4/800/600"
+    ],
+    "lat": -23.5075921230185,
+    "lng": -46.51234612968855
+  },
+  {
+    "id": "RES-002",
+    "titulo": "Casa em Pinheiros",
+    "segmento": "residencial",
+    "tipo": "casa",
+    "bairro": "Pinheiros",
+    "cidade": "São Paulo",
+    "preco": 2586276.0,
+    "area_m2": 206.0,
+    "quartos": 2,
+    "vagas": 0,
+    "salas": null,
+    "descricao": "Imóvel residencial fictício (casa) no bairro Pinheiros, São Paulo. Área de 206 m², 2 quarto(s). Ideal para famílias ou investidores. Código RES-002.",
+    "amenities": [
+      "piscina",
+      "academia",
+      "varanda"
+    ],
+    "image_urls": [
+      "https://picsum.photos/seed/RES-002-1/800/600",
+      "https://picsum.photos/seed/RES-002-2/800/600",
+      "https://picsum.photos/seed/RES-002-3/800/600",
+      "https://picsum.photos/seed/RES-002-4/800/600"
+    ],
+    "lat": -23.548714730855195,
+    "lng": -46.77203920909484
+  },
+  {
+    "id": "RES-003",
+    "titulo": "Cobertura em Vila Mariana",
+    "segmento": "residencial",
+    "tipo": "cobertura",
+    "bairro": "Vila Mariana",
+    "cidade": "São Paulo",
+    "preco": 4274417.0,
+    "area_m2": 238.0,
+    "quartos": 2,
+    "vagas": 3,
+    "salas": null,
+    "descricao": "Imóvel residencial fictício (cobertura) no bairro Vila Mariana, São Paulo. Área de 238 m², 2 quarto(s). Ideal para famílias ou investidores. Código RES-003.",
+    "amenities": [
+      "churrasqueira",
+      "playground",
+      "portaria 24h"
+    ],
+    "image_urls": [
+      "https://picsum.photos/seed/RES-003-1/800/600",
+      "https://picsum.photos/seed/RES-003-2/800/600",
+      "https://picsum.photos/seed/RES-003-3/800/600",
+      "https://picsum.photos/seed/RES-003-4/800/600"
+    ],
+    "lat": -23.475736690397323,
+    "lng": -46.77805037209659
+  },
+  {
+    "id": "RES-004",
+    "titulo": "Kitnet em Brooklin",
+    "segmento": "residencial",
+    "tipo": "kitnet",
+    "bairro": "Brooklin",
+    "cidade": "São Paulo",
+    "preco": 667771.0,
+    "area_m2": 53.0,
+    "quartos": 1,
+    "vagas": 3,
+    "salas": null,
+    "descricao": "Imóvel residencial fictício (kitnet) no bairro Brooklin, São Paulo. Área de 53 m², 1 quarto(s). Ideal para famílias ou investidores. Código RES-004.",
+    "amenities": [
+      "portaria 24h",
+      "academia",
+      "varanda",
+      "elevador"
+    ],
+    "image_urls": [
+      "https://picsum.photos/seed/RES-004-1/800/600",
+      "https://picsum.photos/seed/RES-004-2/800/600",
+      "https://picsum.photos/seed/RES-004-3/800/600",
+      "https://picsum.photos/seed/RES-004-4/800/600"
+    ],
+    "lat": -23.645469533635236,
+    "lng": -46.666021809808804
+  },
+  {
+    "id": "RES-005",
+    "titulo": "Apartamento em Itaim Bibi",
+    "segmento": "residencial",
+    "tipo": "apartamento",
+    "bairro": "Itaim Bibi",
+    "cidade": "São Paulo",
+    "preco": 2672907.0,
+    "area_m2": 271.0,
+    "quartos": 3,
+    "vagas": 2,
+    "salas": null,
+    "descricao": "Imóvel residencial fictício (apartamento) no bairro Itaim Bibi, São Paulo. Área de 271 m², 3 quarto(s). Ideal para famílias ou investidores. Código RES-005.",
+    "amenities": [
+      "varanda",
+      "churrasqueira",
+      "playground"
+    ],
+    "image_urls": [
+      "https://picsum.photos/seed/RES-005-1/800/600",
+      "https://picsum.photos/seed/RES-005-2/800/600",
+      "https://picsum.photos/seed/RES-005-3/800/600",
+      "https://picsum.photos/seed/RES-005-4/800/600"
+    ],
+    "lat": -23.64004172091523,
+    "lng": -46.50331138839155
+  },
+  {
+    "id": "RES-006",
+    "titulo": "Casa em Perdizes",
+    "segmento": "residencial",
+    "tipo": "casa",
+    "bairro": "Perdizes",
+    "cidade": "São Paulo",
+    "preco": 2256985.0,
+    "area_m2": 196.0,
+    "quartos": 2,
+    "vagas": 2,
+    "salas": null,
+    "descricao": "Imóvel residencial fictício (casa) no bairro Perdizes, São Paulo. Área de 196 m², 2 quarto(s). Ideal para famílias ou investidores. Código RES-006.",
+    "amenities": [
+      "academia",
+      "varanda",
+      "piscina",
+      "playground",
+      "portaria 24h"
+    ],
+    "image_urls": [
+      "https://picsum.photos/seed/RES-006-1/800/600",
+      "https://picsum.photos/seed/RES-006-2/800/600",
+      "https://picsum.photos/seed/RES-006-3/800/600",
+      "https://picsum.photos/seed/RES-006-4/800/600"
+    ],
+    "lat": -23.615304413843628,
+    "lng": -46.69318361091937
+  },
+  {
+    "id": "RES-007",
+    "titulo": "Cobertura em Santana",
+    "segmento": "residencial",
+    "tipo": "cobertura",
+    "bairro": "Santana",
+    "cidade": "São Paulo",
+    "preco": 3420710.0,
+    "area_m2": 273.0,
+    "quartos": 2,
+    "vagas": 0,
+    "salas": null,
+    "descricao": "Imóvel residencial fictício (cobertura) no bairro Santana, São Paulo. Área de 273 m², 2 quarto(s). Ideal para famílias ou investidores. Código RES-007.",
+    "amenities": [
+      "portaria 24h",
+      "churrasqueira",
+      "elevador",
+      "academia"
+    ],
+    "image_urls": [
+      "https://picsum.photos/seed/RES-007-1/800/600",
+      "https://picsum.photos/seed/RES-007-2/800/600",
+      "https://picsum.photos/seed/RES-007-3/800/600",
+      "https://picsum.photos/seed/RES-007-4/800/600"
+    ],
+    "lat": -23.58115656789195,
+    "lng": -46.71714789076856
+  },
+  {
+    "id": "RES-008",
+    "titulo": "Kitnet em Tatuapé",
+    "segmento": "residencial",
+    "tipo": "kitnet",
+    "bairro": "Tatuapé",
+    "cidade": "São Paulo",
+    "preco": 728964.0,
+    "area_m2": 36.0,
+    "quartos": 1,
+    "vagas": 0,
+    "salas": null,
+    "descricao": "Imóvel residencial fictício (kitnet) no bairro Tatuapé, São Paulo. Área de 36 m², 1 quarto(s). Ideal para famílias ou investidores. Código RES-008.",
+    "amenities": [
+      "varanda",
+      "academia",
+      "playground",
+      "elevador",
+      "piscina"
+    ],
+    "image_urls": [
+      "https://picsum.photos/seed/RES-008-1/800/600",
+      "https://picsum.photos/seed/RES-008-2/800/600",
+      "https://picsum.photos/seed/RES-008-3/800/600",
+      "https://picsum.photos/seed/RES-008-4/800/600"
+    ],
+    "lat": -23.55905754915573,
+    "lng": -46.69901565196472
+  },
+  {
+    "id": "RES-009",
+    "titulo": "Apartamento em Mooca",
+    "segmento": "residencial",
+    "tipo": "apartamento",
+    "bairro": "Mooca",
+    "cidade": "São Paulo",
+    "preco": 2863322.0,
+    "area_m2": 231.0,
+    "quartos": 4,
+    "vagas": 1,
+    "salas": null,
+    "descricao": "Imóvel residencial fictício (apartamento) no bairro Mooca, São Paulo. Área de 231 m², 4 quarto(s). Ideal para famílias ou investidores. Código RES-009.",
+    "amenities": [
+      "portaria 24h",
+      "piscina",
+      "academia",
+      "varanda",
+      "playground"
+    ],
+    "image_urls": [
+      "https://picsum.photos/seed/RES-009-1/800/600",
+      "https://picsum.photos/seed/RES-009-2/800/600",
+      "https://picsum.photos/seed/RES-009-3/800/600",
+      "https://picsum.photos/seed/RES-009-4/800/600"
+    ],
+    "lat": -23.573720451114642,
+    "lng": -46.76014341843654
+  },
+  {
+    "id": "RES-010",
+    "titulo": "Casa em Lapa",
+    "segmento": "residencial",
+    "tipo": "casa",
+    "bairro": "Lapa",
+    "cidade": "São Paulo",
+    "preco": 4216243.0,
+    "area_m2": 279.0,
+    "quartos": 4,
+    "vagas": 2,
+    "salas": null,
+    "descricao": "Imóvel residencial fictício (casa) no bairro Lapa, São Paulo. Área de 279 m², 4 quarto(s). Ideal para famílias ou investidores. Código RES-010.",
+    "amenities": [
+      "varanda",
+      "churrasqueira",
+      "elevador"
+    ],
+    "image_urls": [
+      "https://picsum.photos/seed/RES-010-1/800/600",
+      "https://picsum.photos/seed/RES-010-2/800/600",
+      "https://picsum.photos/seed/RES-010-3/800/600",
+      "https://picsum.photos/seed/RES-010-4/800/600"
+    ],
+    "lat": -23.457676043067192,
+    "lng": -46.58714443893987
+  },
+  {
+    "id": "RES-011",
+    "titulo": "Cobertura em Campo Belo",
+    "segmento": "residencial",
+    "tipo": "cobertura",
+    "bairro": "Campo Belo",
+    "cidade": "São Paulo",
+    "preco": 1882746.0,
+    "area_m2": 122.0,
+    "quartos": 2,
+    "vagas": 1,
+    "salas": null,
+    "descricao": "Imóvel residencial fictício (cobertura) no bairro Campo Belo, São Paulo. Área de 122 m², 2 quarto(s). Ideal para famílias ou investidores. Código RES-011.",
+    "amenities": [
+      "playground",
+      "elevador",
+      "portaria 24h",
+      "churrasqueira",
+      "varanda"
+    ],
+    "image_urls": [
+      "https://picsum.photos/seed/RES-011-1/800/600",
+      "https://picsum.photos/seed/RES-011-2/800/600",
+      "https://picsum.photos/seed/RES-011-3/800/600",
+      "https://picsum.photos/seed/RES-011-4/800/600"
+    ],
+    "lat": -23.574143878766307,
+    "lng": -46.714203772252816
+  },
+  {
+    "id": "RES-012",
+    "titulo": "Kitnet em Vila Olímpia",
+    "segmento": "residencial",
+    "tipo": "kitnet",
+    "bairro": "Vila Olímpia",
+    "cidade": "São Paulo",
+    "preco": 637568.0,
+    "area_m2": 32.0,
+    "quartos": 1,
+    "vagas": 3,
+    "salas": null,
+    "descricao": "Imóvel residencial fictício (kitnet) no bairro Vila Olímpia, São Paulo. Área de 32 m², 1 quarto(s). Ideal para famílias ou investidores. Código RES-012.",
+    "amenities": [
+      "elevador",
+      "piscina",
+      "varanda"
+    ],
+    "image_urls": [
+      "https://picsum.photos/seed/RES-012-1/800/600",
+      "https://picsum.photos/seed/RES-012-2/800/600",
+      "https://picsum.photos/seed/RES-012-3/800/600",
+      "https://picsum.photos/seed/RES-012-4/800/600"
+    ],
+    "lat": -23.633318083356418,
+    "lng": -46.73200539948327
+  },
+  {
+    "id": "RES-013",
+    "titulo": "Apartamento em Jardins",
+    "segmento": "residencial",
+    "tipo": "apartamento",
+    "bairro": "Jardins",
+    "cidade": "São Paulo",
+    "preco": 2299755.0,
+    "area_m2": 163.0,
+    "quartos": 4,
+    "vagas": 0,
+    "salas": null,
+    "descricao": "Imóvel residencial fictício (apartamento) no bairro Jardins, São Paulo. Área de 163 m², 4 quarto(s). Ideal para famílias ou investidores. Código RES-013.",
+    "amenities": [
+      "churrasqueira",
+      "playground",
+      "elevador",
+      "portaria 24h"
+    ],
+    "image_urls": [
+      "https://picsum.photos/seed/RES-013-1/800/600",
+      "https://picsum.photos/seed/RES-013-2/800/600",
+      "https://picsum.photos/seed/RES-013-3/800/600",
+      "https://picsum.photos/seed/RES-013-4/800/600"
+    ],
+    "lat": -23.43694118937273,
+    "lng": -46.52176608932965
+  },
+  {
+    "id": "RES-014",
+    "titulo": "Casa em Consolação",
+    "segmento": "residencial",
+    "tipo": "casa",
+    "bairro": "Consolação",
+    "cidade": "São Paulo",
+    "preco": 3441393.0,
+    "area_m2": 229.0,
+    "quartos": 2,
+    "vagas": 0,
+    "salas": null,
+    "descricao": "Imóvel residencial fictício (casa) no bairro Consolação, São Paulo. Área de 229 m², 2 quarto(s). Ideal para famílias ou investidores. Código RES-014.",
+    "amenities": [
+      "playground",
+      "portaria 24h",
+      "varanda",
+      "piscina",
+      "academia"
+    ],
+    "image_urls": [
+      "https://picsum.photos/seed/RES-014-1/800/600",
+      "https://picsum.photos/seed/RES-014-2/800/600",
+      "https://picsum.photos/seed/RES-014-3/800/600",
+      "https://picsum.photos/seed/RES-014-4/800/600"
+    ],
+    "lat": -23.565656339839414,
+    "lng": -46.64388288810124
+  },
+  {
+    "id": "RES-015",
+    "titulo": "Cobertura em Liberdade",
+    "segmento": "residencial",
+    "tipo": "cobertura",
+    "bairro": "Liberdade",
+    "cidade": "São Paulo",
+    "preco": 5321797.0,
+    "area_m2": 279.0,
+    "quartos": 4,
+    "vagas": 2,
+    "salas": null,
+    "descricao": "Imóvel residencial fictício (cobertura) no bairro Liberdade, São Paulo. Área de 279 m², 4 quarto(s). Ideal para famílias ou investidores. Código RES-015.",
+    "amenities": [
+      "elevador",
+      "academia",
+      "playground",
+      "piscina",
+      "portaria 24h"
+    ],
+    "image_urls": [
+      "https://picsum.photos/seed/RES-015-1/800/600",
+      "https://picsum.photos/seed/RES-015-2/800/600",
+      "https://picsum.photos/seed/RES-015-3/800/600",
+      "https://picsum.photos/seed/RES-015-4/800/600"
+    ],
+    "lat": -23.59837325005233,
+    "lng": -46.5883151515402
+  },
+  {
+    "id": "RES-016",
+    "titulo": "Kitnet em Santo André Centro",
+    "segmento": "residencial",
+    "tipo": "kitnet",
+    "bairro": "Santo André Centro",
+    "cidade": "Santo André",
+    "preco": 648063.0,
+    "area_m2": 47.0,
+    "quartos": 1,
+    "vagas": 1,
+    "salas": null,
+    "descricao": "Imóvel residencial fictício (kitnet) no bairro Santo André Centro, Santo André. Área de 47 m², 1 quarto(s). Ideal para famílias ou investidores. Código RES-016.",
+    "amenities": [
+      "elevador",
+      "academia",
+      "playground",
+      "piscina"
+    ],
+    "image_urls": [
+      "https://picsum.photos/seed/RES-016-1/800/600",
+      "https://picsum.photos/seed/RES-016-2/800/600",
+      "https://picsum.photos/seed/RES-016-3/800/600",
+      "https://picsum.photos/seed/RES-016-4/800/600"
+    ],
+    "lat": -23.526253299729547,
+    "lng": -46.63341828759132
+  },
+  {
+    "id": "RES-017",
+    "titulo": "Apartamento em São Bernardo Centro",
+    "segmento": "residencial",
+    "tipo": "apartamento",
+    "bairro": "São Bernardo Centro",
+    "cidade": "São Bernardo do Campo",
+    "preco": 2329606.0,
+    "area_m2": 147.0,
+    "quartos": 2,
+    "vagas": 2,
+    "salas": null,
+    "descricao": "Imóvel residencial fictício (apartamento) no bairro São Bernardo Centro, São Bernardo do Campo. Área de 147 m², 2 quarto(s). Ideal para famílias ou investidores. Código RES-017.",
+    "amenities": [
+      "piscina",
+      "academia",
+      "playground"
+    ],
+    "image_urls": [
+      "https://picsum.photos/seed/RES-017-1/800/600",
+      "https://picsum.photos/seed/RES-017-2/800/600",
+      "https://picsum.photos/seed/RES-017-3/800/600",
+      "https://picsum.photos/seed/RES-017-4/800/600"
+    ],
+    "lat": -23.442732133128484,
+    "lng": -46.75430396437964
+  },
+  {
+    "id": "RES-018",
+    "titulo": "Casa em São Caetano Centro",
+    "segmento": "residencial",
+    "tipo": "casa",
+    "bairro": "São Caetano Centro",
+    "cidade": "São Caetano do Sul",
+    "preco": 2325711.0,
+    "area_m2": 263.0,
+    "quartos": 3,
+    "vagas": 1,
+    "salas": null,
+    "descricao": "Imóvel residencial fictício (casa) no bairro São Caetano Centro, São Caetano do Sul. Área de 263 m², 3 quarto(s). Ideal para famílias ou investidores. Código RES-018.",
+    "amenities": [
+      "varanda",
+      "churrasqueira",
+      "playground"
+    ],
+    "image_urls": [
+      "https://picsum.photos/seed/RES-018-1/800/600",
+      "https://picsum.photos/seed/RES-018-2/800/600",
+      "https://picsum.photos/seed/RES-018-3/800/600",
+      "https://picsum.photos/seed/RES-018-4/800/600"
+    ],
+    "lat": -23.63036952984621,
+    "lng": -46.62169786377453
+  },
+  {
+    "id": "RES-019",
+    "titulo": "Cobertura em Diadema Centro",
+    "segmento": "residencial",
+    "tipo": "cobertura",
+    "bairro": "Diadema Centro",
+    "cidade": "Diadema",
+    "preco": 2590142.0,
+    "area_m2": 163.0,
+    "quartos": 4,
+    "vagas": 1,
+    "salas": null,
+    "descricao": "Imóvel residencial fictício (cobertura) no bairro Diadema Centro, Diadema. Área de 163 m², 4 quarto(s). Ideal para famílias ou investidores. Código RES-019.",
+    "amenities": [
+      "portaria 24h",
+      "churrasqueira",
+      "elevador",
+      "varanda",
+      "playground"
+    ],
+    "image_urls": [
+      "https://picsum.photos/seed/RES-019-1/800/600",
+      "https://picsum.photos/seed/RES-019-2/800/600",
+      "https://picsum.photos/seed/RES-019-3/800/600",
+      "https://picsum.photos/seed/RES-019-4/800/600"
+    ],
+    "lat": -23.56164332606613,
+    "lng": -46.7056283159002
+  },
+  {
+    "id": "RES-020",
+    "titulo": "Kitnet em Moema",
+    "segmento": "residencial",
+    "tipo": "kitnet",
+    "bairro": "Moema",
+    "cidade": "São Paulo",
+    "preco": 578070.0,
+    "area_m2": 30.0,
+    "quartos": 1,
+    "vagas": 0,
+    "salas": null,
+    "descricao": "Imóvel residencial fictício (kitnet) no bairro Moema, São Paulo. Área de 30 m², 1 quarto(s). Ideal para famílias ou investidores. Código RES-020.",
+    "amenities": [
+      "playground",
+      "academia",
+      "elevador",
+      "varanda",
+      "piscina"
+    ],
+    "image_urls": [
+      "https://picsum.photos/seed/RES-020-1/800/600",
+      "https://picsum.photos/seed/RES-020-2/800/600",
+      "https://picsum.photos/seed/RES-020-3/800/600",
+      "https://picsum.photos/seed/RES-020-4/800/600"
+    ],
+    "lat": -23.652961659357832,
+    "lng": -46.59066911281897
+  },
+  {
+    "id": "RES-021",
+    "titulo": "Apartamento em Pinheiros",
+    "segmento": "residencial",
+    "tipo": "apartamento",
+    "bairro": "Pinheiros",
+    "cidade": "São Paulo",
+    "preco": 1468024.0,
+    "area_m2": 72.0,
+    "quartos": 2,
+    "vagas": 0,
+    "salas": null,
+    "descricao": "Imóvel residencial fictício (apartamento) no bairro Pinheiros, São Paulo. Área de 72 m², 2 quarto(s). Ideal para famílias ou investidores. Código RES-021.",
+    "amenities": [
+      "piscina",
+      "playground",
+      "academia",
+      "portaria 24h"
+    ],
+    "image_urls": [
+      "https://picsum.photos/seed/RES-021-1/800/600",
+      "https://picsum.photos/seed/RES-021-2/800/600",
+      "https://picsum.photos/seed/RES-021-3/800/600",
+      "https://picsum.photos/seed/RES-021-4/800/600"
+    ],
+    "lat": -23.509445333208895,
+    "lng": -46.71572895778887
+  },
+  {
+    "id": "RES-022",
+    "titulo": "Casa em Vila Mariana",
+    "segmento": "residencial",
+    "tipo": "casa",
+    "bairro": "Vila Mariana",
+    "cidade": "São Paulo",
+    "preco": 3938427.0,
+    "area_m2": 240.0,
+    "quartos": 2,
+    "vagas": 3,
+    "salas": null,
+    "descricao": "Imóvel residencial fictício (casa) no bairro Vila Mariana, São Paulo. Área de 240 m², 2 quarto(s). Ideal para famílias ou investidores. Código RES-022.",
+    "amenities": [
+      "elevador",
+      "churrasqueira",
+      "varanda"
+    ],
+    "image_urls": [
+      "https://picsum.photos/seed/RES-022-1/800/600",
+      "https://picsum.photos/seed/RES-022-2/800/600",
+      "https://picsum.photos/seed/RES-022-3/800/600",
+      "https://picsum.photos/seed/RES-022-4/800/600"
+    ],
+    "lat": -23.62430162055315,
+    "lng": -46.75092075573136
+  },
+  {
+    "id": "RES-023",
+    "titulo": "Cobertura em Brooklin",
+    "segmento": "residencial",
+    "tipo": "cobertura",
+    "bairro": "Brooklin",
+    "cidade": "São Paulo",
+    "preco": 2675982.0,
+    "area_m2": 145.0,
+    "quartos": 3,
+    "vagas": 3,
+    "salas": null,
+    "descricao": "Imóvel residencial fictício (cobertura) no bairro Brooklin, São Paulo. Área de 145 m², 3 quarto(s). Ideal para famílias ou investidores. Código RES-023.",
+    "amenities": [
+      "elevador",
+      "varanda",
+      "piscina",
+      "playground"
+    ],
+    "image_urls": [
+      "https://picsum.photos/seed/RES-023-1/800/600",
+      "https://picsum.photos/seed/RES-023-2/800/600",
+      "https://picsum.photos/seed/RES-023-3/800/600",
+      "https://picsum.photos/seed/RES-023-4/800/600"
+    ],
+    "lat": -23.655452958221517,
+    "lng": -46.561535923467645
+  },
+  {
+    "id": "RES-024",
+    "titulo": "Kitnet em Itaim Bibi",
+    "segmento": "residencial",
+    "tipo": "kitnet",
+    "bairro": "Itaim Bibi",
+    "cidade": "São Paulo",
+    "preco": 972574.0,
+    "area_m2": 53.0,
+    "quartos": 1,
+    "vagas": 0,
+    "salas": null,
+    "descricao": "Imóvel residencial fictício (kitnet) no bairro Itaim Bibi, São Paulo. Área de 53 m², 1 quarto(s). Ideal para famílias ou investidores. Código RES-024.",
+    "amenities": [
+      "academia",
+      "elevador",
+      "playground"
+    ],
+    "image_urls": [
+      "https://picsum.photos/seed/RES-024-1/800/600",
+      "https://picsum.photos/seed/RES-024-2/800/600",
+      "https://picsum.photos/seed/RES-024-3/800/600",
+      "https://picsum.photos/seed/RES-024-4/800/600"
+    ],
+    "lat": -23.56233274852005,
+    "lng": -46.65343550804968
+  },
+  {
+    "id": "RES-025",
+    "titulo": "Apartamento em Perdizes",
+    "segmento": "residencial",
+    "tipo": "apartamento",
+    "bairro": "Perdizes",
+    "cidade": "São Paulo",
+    "preco": 1822458.0,
+    "area_m2": 173.0,
+    "quartos": 3,
+    "vagas": 0,
+    "salas": null,
+    "descricao": "Imóvel residencial fictício (apartamento) no bairro Perdizes, São Paulo. Área de 173 m², 3 quarto(s). Ideal para famílias ou investidores. Código RES-025.",
+    "amenities": [
+      "elevador",
+      "playground",
+      "piscina",
+      "varanda"
+    ],
+    "image_urls": [
+      "https://picsum.photos/seed/RES-025-1/800/600",
+      "https://picsum.photos/seed/RES-025-2/800/600",
+      "https://picsum.photos/seed/RES-025-3/800/600",
+      "https://picsum.photos/seed/RES-025-4/800/600"
+    ],
+    "lat": -23.513485225440355,
+    "lng": -46.61782361856991
+  },
+  {
+    "id": "RES-026",
+    "titulo": "Casa em Santana",
+    "segmento": "residencial",
+    "tipo": "casa",
+    "bairro": "Santana",
+    "cidade": "São Paulo",
+    "preco": 1658868.0,
+    "area_m2": 78.0,
+    "quartos": 2,
+    "vagas": 1,
+    "salas": null,
+    "descricao": "Imóvel residencial fictício (casa) no bairro Santana, São Paulo. Área de 78 m², 2 quarto(s). Ideal para famílias ou investidores. Código RES-026.",
+    "amenities": [
+      "churrasqueira",
+      "elevador",
+      "varanda"
+    ],
+    "image_urls": [
+      "https://picsum.photos/seed/RES-026-1/800/600",
+      "https://picsum.photos/seed/RES-026-2/800/600",
+      "https://picsum.photos/seed/RES-026-3/800/600",
+      "https://picsum.photos/seed/RES-026-4/800/600"
+    ],
+    "lat": -23.618700648192196,
+    "lng": -46.659687912235164
+  },
+  {
+    "id": "RES-027",
+    "titulo": "Cobertura em Tatuapé",
+    "segmento": "residencial",
+    "tipo": "cobertura",
+    "bairro": "Tatuapé",
+    "cidade": "São Paulo",
+    "preco": 1954002.0,
+    "area_m2": 97.0,
+    "quartos": 2,
+    "vagas": 0,
+    "salas": null,
+    "descricao": "Imóvel residencial fictício (cobertura) no bairro Tatuapé, São Paulo. Área de 97 m², 2 quarto(s). Ideal para famílias ou investidores. Código RES-027.",
+    "amenities": [
+      "portaria 24h",
+      "churrasqueira",
+      "elevador",
+      "varanda"
+    ],
+    "image_urls": [
+      "https://picsum.photos/seed/RES-027-1/800/600",
+      "https://picsum.photos/seed/RES-027-2/800/600",
+      "https://picsum.photos/seed/RES-027-3/800/600",
+      "https://picsum.photos/seed/RES-027-4/800/600"
+    ],
+    "lat": -23.502818039135963,
+    "lng": -46.56084840477536
+  },
+  {
+    "id": "RES-028",
+    "titulo": "Kitnet em Mooca",
+    "segmento": "residencial",
+    "tipo": "kitnet",
+    "bairro": "Mooca",
+    "cidade": "São Paulo",
+    "preco": 839756.0,
+    "area_m2": 53.0,
+    "quartos": 1,
+    "vagas": 3,
+    "salas": null,
+    "descricao": "Imóvel residencial fictício (kitnet) no bairro Mooca, São Paulo. Área de 53 m², 1 quarto(s). Ideal para famílias ou investidores. Código RES-028.",
+    "amenities": [
+      "academia",
+      "portaria 24h",
+      "elevador"
+    ],
+    "image_urls": [
+      "https://picsum.photos/seed/RES-028-1/800/600",
+      "https://picsum.photos/seed/RES-028-2/800/600",
+      "https://picsum.photos/seed/RES-028-3/800/600",
+      "https://picsum.photos/seed/RES-028-4/800/600"
+    ],
+    "lat": -23.437509752407404,
+    "lng": -46.60624591275513
+  },
+  {
+    "id": "RES-029",
+    "titulo": "Apartamento em Lapa",
+    "segmento": "residencial",
+    "tipo": "apartamento",
+    "bairro": "Lapa",
+    "cidade": "São Paulo",
+    "preco": 1513890.0,
+    "area_m2": 70.0,
+    "quartos": 4,
+    "vagas": 2,
+    "salas": null,
+    "descricao": "Imóvel residencial fictício (apartamento) no bairro Lapa, São Paulo. Área de 70 m², 4 quarto(s). Ideal para famílias ou investidores. Código RES-029.",
+    "amenities": [
+      "piscina",
+      "playground",
+      "churrasqueira"
+    ],
+    "image_urls": [
+      "https://picsum.photos/seed/RES-029-1/800/600",
+      "https://picsum.photos/seed/RES-029-2/800/600",
+      "https://picsum.photos/seed/RES-029-3/800/600",
+      "https://picsum.photos/seed/RES-029-4/800/600"
+    ],
+    "lat": -23.549315908099317,
+    "lng": -46.52418403238552
+  },
+  {
+    "id": "RES-030",
+    "titulo": "Casa em Campo Belo",
+    "segmento": "residencial",
+    "tipo": "casa",
+    "bairro": "Campo Belo",
+    "cidade": "São Paulo",
+    "preco": 1388671.0,
+    "area_m2": 69.0,
+    "quartos": 2,
+    "vagas": 0,
+    "salas": null,
+    "descricao": "Imóvel residencial fictício (casa) no bairro Campo Belo, São Paulo. Área de 69 m², 2 quarto(s). Ideal para famílias ou investidores. Código RES-030.",
+    "amenities": [
+      "piscina",
+      "playground",
+      "elevador"
+    ],
+    "image_urls": [
+      "https://picsum.photos/seed/RES-030-1/800/600",
+      "https://picsum.photos/seed/RES-030-2/800/600",
+      "https://picsum.photos/seed/RES-030-3/800/600",
+      "https://picsum.photos/seed/RES-030-4/800/600"
+    ],
+    "lat": -23.50794898713502,
+    "lng": -46.709438831499725
+  },
+  {
+    "id": "RES-031",
+    "titulo": "Cobertura em Vila Olímpia",
+    "segmento": "residencial",
+    "tipo": "cobertura",
+    "bairro": "Vila Olímpia",
+    "cidade": "São Paulo",
+    "preco": 2774140.0,
+    "area_m2": 200.0,
+    "quartos": 2,
+    "vagas": 0,
+    "salas": null,
+    "descricao": "Imóvel residencial fictício (cobertura) no bairro Vila Olímpia, São Paulo. Área de 200 m², 2 quarto(s). Ideal para famílias ou investidores. Código RES-031.",
+    "amenities": [
+      "piscina",
+      "churrasqueira",
+      "playground",
+      "portaria 24h",
+      "academia"
+    ],
+    "image_urls": [
+      "https://picsum.photos/seed/RES-031-1/800/600",
+      "https://picsum.photos/seed/RES-031-2/800/600",
+      "https://picsum.photos/seed/RES-031-3/800/600",
+      "https://picsum.photos/seed/RES-031-4/800/600"
+    ],
+    "lat": -23.62097779213835,
+    "lng": -46.56514245976318
+  },
+  {
+    "id": "RES-032",
+    "titulo": "Kitnet em Jardins",
+    "segmento": "residencial",
+    "tipo": "kitnet",
+    "bairro": "Jardins",
+    "cidade": "São Paulo",
+    "preco": 593625.0,
+    "area_m2": 35.0,
+    "quartos": 1,
+    "vagas": 3,
+    "salas": null,
+    "descricao": "Imóvel residencial fictício (kitnet) no bairro Jardins, São Paulo. Área de 35 m², 1 quarto(s). Ideal para famílias ou investidores. Código RES-032.",
+    "amenities": [
+      "varanda",
+      "elevador",
+      "portaria 24h"
+    ],
+    "image_urls": [
+      "https://picsum.photos/seed/RES-032-1/800/600",
+      "https://picsum.photos/seed/RES-032-2/800/600",
+      "https://picsum.photos/seed/RES-032-3/800/600",
+      "https://picsum.photos/seed/RES-032-4/800/600"
+    ],
+    "lat": -23.560266102583093,
+    "lng": -46.50129450048835
+  },
+  {
+    "id": "RES-033",
+    "titulo": "Apartamento em Consolação",
+    "segmento": "residencial",
+    "tipo": "apartamento",
+    "bairro": "Consolação",
+    "cidade": "São Paulo",
+    "preco": 1080478.0,
+    "area_m2": 57.0,
+    "quartos": 2,
+    "vagas": 0,
+    "salas": null,
+    "descricao": "Imóvel residencial fictício (apartamento) no bairro Consolação, São Paulo. Área de 57 m², 2 quarto(s). Ideal para famílias ou investidores. Código RES-033.",
+    "amenities": [
+      "playground",
+      "academia",
+      "elevador"
+    ],
+    "image_urls": [
+      "https://picsum.photos/seed/RES-033-1/800/600",
+      "https://picsum.photos/seed/RES-033-2/800/600",
+      "https://picsum.photos/seed/RES-033-3/800/600",
+      "https://picsum.photos/seed/RES-033-4/800/600"
+    ],
+    "lat": -23.606351900459906,
+    "lng": -46.50002218660189
+  },
+  {
+    "id": "RES-034",
+    "titulo": "Casa em Liberdade",
+    "segmento": "residencial",
+    "tipo": "casa",
+    "bairro": "Liberdade",
+    "cidade": "São Paulo",
+    "preco": 2794822.0,
+    "area_m2": 280.0,
+    "quartos": 2,
+    "vagas": 2,
+    "salas": null,
+    "descricao": "Imóvel residencial fictício (casa) no bairro Liberdade, São Paulo. Área de 280 m², 2 quarto(s). Ideal para famílias ou investidores. Código RES-034.",
+    "amenities": [
+      "academia",
+      "churrasqueira",
+      "playground",
+      "portaria 24h"
+    ],
+    "image_urls": [
+      "https://picsum.photos/seed/RES-034-1/800/600",
+      "https://picsum.photos/seed/RES-034-2/800/600",
+      "https://picsum.photos/seed/RES-034-3/800/600",
+      "https://picsum.photos/seed/RES-034-4/800/600"
+    ],
+    "lat": -23.523197336225774,
+    "lng": -46.48383008091055
+  },
+  {
+    "id": "RES-035",
+    "titulo": "Cobertura em Santo André Centro",
+    "segmento": "residencial",
+    "tipo": "cobertura",
+    "bairro": "Santo André Centro",
+    "cidade": "Santo André",
+    "preco": 2373882.0,
+    "area_m2": 190.0,
+    "quartos": 4,
+    "vagas": 2,
+    "salas": null,
+    "descricao": "Imóvel residencial fictício (cobertura) no bairro Santo André Centro, Santo André. Área de 190 m², 4 quarto(s). Ideal para famílias ou investidores. Código RES-035.",
+    "amenities": [
+      "piscina",
+      "academia",
+      "portaria 24h",
+      "elevador",
+      "churrasqueira"
+    ],
+    "image_urls": [
+      "https://picsum.photos/seed/RES-035-1/800/600",
+      "https://picsum.photos/seed/RES-035-2/800/600",
+      "https://picsum.photos/seed/RES-035-3/800/600",
+      "https://picsum.photos/seed/RES-035-4/800/600"
+    ],
+    "lat": -23.491819995844562,
+    "lng": -46.733365627067506
+  },
+  {
+    "id": "RES-036",
+    "titulo": "Kitnet em São Bernardo Centro",
+    "segmento": "residencial",
+    "tipo": "kitnet",
+    "bairro": "São Bernardo Centro",
+    "cidade": "São Bernardo do Campo",
+    "preco": 709798.0,
+    "area_m2": 37.0,
+    "quartos": 1,
+    "vagas": 1,
+    "salas": null,
+    "descricao": "Imóvel residencial fictício (kitnet) no bairro São Bernardo Centro, São Bernardo do Campo. Área de 37 m², 1 quarto(s). Ideal para famílias ou investidores. Código RES-036.",
+    "amenities": [
+      "portaria 24h",
+      "academia",
+      "elevador",
+      "churrasqueira",
+      "varanda"
+    ],
+    "image_urls": [
+      "https://picsum.photos/seed/RES-036-1/800/600",
+      "https://picsum.photos/seed/RES-036-2/800/600",
+      "https://picsum.photos/seed/RES-036-3/800/600",
+      "https://picsum.photos/seed/RES-036-4/800/600"
+    ],
+    "lat": -23.45271924214096,
+    "lng": -46.52616888601155
+  },
+  {
+    "id": "RES-037",
+    "titulo": "Apartamento em São Caetano Centro",
+    "segmento": "residencial",
+    "tipo": "apartamento",
+    "bairro": "São Caetano Centro",
+    "cidade": "São Caetano do Sul",
+    "preco": 2339273.0,
+    "area_m2": 217.0,
+    "quartos": 2,
+    "vagas": 2,
+    "salas": null,
+    "descricao": "Imóvel residencial fictício (apartamento) no bairro São Caetano Centro, São Caetano do Sul. Área de 217 m², 2 quarto(s). Ideal para famílias ou investidores. Código RES-037.",
+    "amenities": [
+      "piscina",
+      "portaria 24h",
+      "academia"
+    ],
+    "image_urls": [
+      "https://picsum.photos/seed/RES-037-1/800/600",
+      "https://picsum.photos/seed/RES-037-2/800/600",
+      "https://picsum.photos/seed/RES-037-3/800/600",
+      "https://picsum.photos/seed/RES-037-4/800/600"
+    ],
+    "lat": -23.51709278944767,
+    "lng": -46.7014134212697
+  },
+  {
+    "id": "RES-038",
+    "titulo": "Casa em Diadema Centro",
+    "segmento": "residencial",
+    "tipo": "casa",
+    "bairro": "Diadema Centro",
+    "cidade": "Diadema",
+    "preco": 2627970.0,
+    "area_m2": 168.0,
+    "quartos": 4,
+    "vagas": 3,
+    "salas": null,
+    "descricao": "Imóvel residencial fictício (casa) no bairro Diadema Centro, Diadema. Área de 168 m², 4 quarto(s). Ideal para famílias ou investidores. Código RES-038.",
+    "amenities": [
+      "piscina",
+      "elevador",
+      "varanda",
+      "academia",
+      "portaria 24h"
+    ],
+    "image_urls": [
+      "https://picsum.photos/seed/RES-038-1/800/600",
+      "https://picsum.photos/seed/RES-038-2/800/600",
+      "https://picsum.photos/seed/RES-038-3/800/600",
+      "https://picsum.photos/seed/RES-038-4/800/600"
+    ],
+    "lat": -23.661353246865403,
+    "lng": -46.66923520464635
+  },
+  {
+    "id": "RES-039",
+    "titulo": "Cobertura em Moema",
+    "segmento": "residencial",
+    "tipo": "cobertura",
+    "bairro": "Moema",
+    "cidade": "São Paulo",
+    "preco": 2186368.0,
+    "area_m2": 92.0,
+    "quartos": 4,
+    "vagas": 1,
+    "salas": null,
+    "descricao": "Imóvel residencial fictício (cobertura) no bairro Moema, São Paulo. Área de 92 m², 4 quarto(s). Ideal para famílias ou investidores. Código RES-039.",
+    "amenities": [
+      "portaria 24h",
+      "elevador",
+      "piscina"
+    ],
+    "image_urls": [
+      "https://picsum.photos/seed/RES-039-1/800/600",
+      "https://picsum.photos/seed/RES-039-2/800/600",
+      "https://picsum.photos/seed/RES-039-3/800/600",
+      "https://picsum.photos/seed/RES-039-4/800/600"
+    ],
+    "lat": -23.454258087233647,
+    "lng": -46.71697703849808
+  },
+  {
+    "id": "RES-040",
+    "titulo": "Kitnet em Pinheiros",
+    "segmento": "residencial",
+    "tipo": "kitnet",
+    "bairro": "Pinheiros",
+    "cidade": "São Paulo",
+    "preco": 708705.0,
+    "area_m2": 35.0,
+    "quartos": 1,
+    "vagas": 0,
+    "salas": null,
+    "descricao": "Imóvel residencial fictício (kitnet) no bairro Pinheiros, São Paulo. Área de 35 m², 1 quarto(s). Ideal para famílias ou investidores. Código RES-040.",
+    "amenities": [
+      "elevador",
+      "playground",
+      "churrasqueira",
+      "academia"
+    ],
+    "image_urls": [
+      "https://picsum.photos/seed/RES-040-1/800/600",
+      "https://picsum.photos/seed/RES-040-2/800/600",
+      "https://picsum.photos/seed/RES-040-3/800/600",
+      "https://picsum.photos/seed/RES-040-4/800/600"
+    ],
+    "lat": -23.44781668258331,
+    "lng": -46.708978800331195
+  },
+  {
+    "id": "RES-041",
+    "titulo": "Apartamento em Vila Mariana",
+    "segmento": "residencial",
+    "tipo": "apartamento",
+    "bairro": "Vila Mariana",
+    "cidade": "São Paulo",
+    "preco": 3495519.0,
+    "area_m2": 259.0,
+    "quartos": 2,
+    "vagas": 1,
+    "salas": null,
+    "descricao": "Imóvel residencial fictício (apartamento) no bairro Vila Mariana, São Paulo. Área de 259 m², 2 quarto(s). Ideal para famílias ou investidores. Código RES-041.",
+    "amenities": [
+      "piscina",
+      "academia",
+      "portaria 24h",
+      "churrasqueira"
+    ],
+    "image_urls": [
+      "https://picsum.photos/seed/RES-041-1/800/600",
+      "https://picsum.photos/seed/RES-041-2/800/600",
+      "https://picsum.photos/seed/RES-041-3/800/600",
+      "https://picsum.photos/seed/RES-041-4/800/600"
+    ],
+    "lat": -23.477463566655086,
+    "lng": -46.52078079148742
+  },
+  {
+    "id": "RES-042",
+    "titulo": "Casa em Brooklin",
+    "segmento": "residencial",
+    "tipo": "casa",
+    "bairro": "Brooklin",
+    "cidade": "São Paulo",
+    "preco": 1522475.0,
+    "area_m2": 123.0,
+    "quartos": 2,
+    "vagas": 0,
+    "salas": null,
+    "descricao": "Imóvel residencial fictício (casa) no bairro Brooklin, São Paulo. Área de 123 m², 2 quarto(s). Ideal para famílias ou investidores. Código RES-042.",
+    "amenities": [
+      "elevador",
+      "piscina",
+      "churrasqueira",
+      "academia"
+    ],
+    "image_urls": [
+      "https://picsum.photos/seed/RES-042-1/800/600",
+      "https://picsum.photos/seed/RES-042-2/800/600",
+      "https://picsum.photos/seed/RES-042-3/800/600",
+      "https://picsum.photos/seed/RES-042-4/800/600"
+    ],
+    "lat": -23.62210252079382,
+    "lng": -46.504464429631156
+  },
+  {
+    "id": "RES-043",
+    "titulo": "Cobertura em Itaim Bibi",
+    "segmento": "residencial",
+    "tipo": "cobertura",
+    "bairro": "Itaim Bibi",
+    "cidade": "São Paulo",
+    "preco": 3164469.0,
+    "area_m2": 133.0,
+    "quartos": 3,
+    "vagas": 1,
+    "salas": null,
+    "descricao": "Imóvel residencial fictício (cobertura) no bairro Itaim Bibi, São Paulo. Área de 133 m², 3 quarto(s). Ideal para famílias ou investidores. Código RES-043.",
+    "amenities": [
+      "piscina",
+      "varanda",
+      "academia"
+    ],
+    "image_urls": [
+      "https://picsum.photos/seed/RES-043-1/800/600",
+      "https://picsum.photos/seed/RES-043-2/800/600",
+      "https://picsum.photos/seed/RES-043-3/800/600",
+      "https://picsum.photos/seed/RES-043-4/800/600"
+    ],
+    "lat": -23.574368165144453,
+    "lng": -46.6964190816931
+  },
+  {
+    "id": "RES-044",
+    "titulo": "Kitnet em Perdizes",
+    "segmento": "residencial",
+    "tipo": "kitnet",
+    "bairro": "Perdizes",
+    "cidade": "São Paulo",
+    "preco": 685050.0,
+    "area_m2": 30.0,
+    "quartos": 1,
+    "vagas": 2,
+    "salas": null,
+    "descricao": "Imóvel residencial fictício (kitnet) no bairro Perdizes, São Paulo. Área de 30 m², 1 quarto(s). Ideal para famílias ou investidores. Código RES-044.",
+    "amenities": [
+      "varanda",
+      "playground",
+      "churrasqueira",
+      "portaria 24h"
+    ],
+    "image_urls": [
+      "https://picsum.photos/seed/RES-044-1/800/600",
+      "https://picsum.photos/seed/RES-044-2/800/600",
+      "https://picsum.photos/seed/RES-044-3/800/600",
+      "https://picsum.photos/seed/RES-044-4/800/600"
+    ],
+    "lat": -23.44458308632207,
+    "lng": -46.74539747444457
+  },
+  {
+    "id": "RES-045",
+    "titulo": "Apartamento em Santana",
+    "segmento": "residencial",
+    "tipo": "apartamento",
+    "bairro": "Santana",
+    "cidade": "São Paulo",
+    "preco": 1615600.0,
+    "area_m2": 100.0,
+    "quartos": 3,
+    "vagas": 2,
+    "salas": null,
+    "descricao": "Imóvel residencial fictício (apartamento) no bairro Santana, São Paulo. Área de 100 m², 3 quarto(s). Ideal para famílias ou investidores. Código RES-045.",
+    "amenities": [
+      "piscina",
+      "playground",
+      "churrasqueira"
+    ],
+    "image_urls": [
+      "https://picsum.photos/seed/RES-045-1/800/600",
+      "https://picsum.photos/seed/RES-045-2/800/600",
+      "https://picsum.photos/seed/RES-045-3/800/600",
+      "https://picsum.photos/seed/RES-045-4/800/600"
+    ],
+    "lat": -23.58703509319685,
+    "lng": -46.544071546538895
+  },
+  {
+    "id": "RES-046",
+    "titulo": "Casa em Tatuapé",
+    "segmento": "residencial",
+    "tipo": "casa",
+    "bairro": "Tatuapé",
+    "cidade": "São Paulo",
+    "preco": 2891893.0,
+    "area_m2": 210.0,
+    "quartos": 3,
+    "vagas": 0,
+    "salas": null,
+    "descricao": "Imóvel residencial fictício (casa) no bairro Tatuapé, São Paulo. Área de 210 m², 3 quarto(s). Ideal para famílias ou investidores. Código RES-046.",
+    "amenities": [
+      "playground",
+      "academia",
+      "portaria 24h",
+      "piscina"
+    ],
+    "image_urls": [
+      "https://picsum.photos/seed/RES-046-1/800/600",
+      "https://picsum.photos/seed/RES-046-2/800/600",
+      "https://picsum.photos/seed/RES-046-3/800/600",
+      "https://picsum.photos/seed/RES-046-4/800/600"
+    ],
+    "lat": -23.4998915318798,
+    "lng": -46.77949261653441
+  },
+  {
+    "id": "RES-047",
+    "titulo": "Cobertura em Mooca",
+    "segmento": "residencial",
+    "tipo": "cobertura",
+    "bairro": "Mooca",
+    "cidade": "São Paulo",
+    "preco": 4582565.0,
+    "area_m2": 230.0,
+    "quartos": 4,
+    "vagas": 1,
+    "salas": null,
+    "descricao": "Imóvel residencial fictício (cobertura) no bairro Mooca, São Paulo. Área de 230 m², 4 quarto(s). Ideal para famílias ou investidores. Código RES-047.",
+    "amenities": [
+      "churrasqueira",
+      "piscina",
+      "portaria 24h",
+      "playground"
+    ],
+    "image_urls": [
+      "https://picsum.photos/seed/RES-047-1/800/600",
+      "https://picsum.photos/seed/RES-047-2/800/600",
+      "https://picsum.photos/seed/RES-047-3/800/600",
+      "https://picsum.photos/seed/RES-047-4/800/600"
+    ],
+    "lat": -23.51078700569627,
+    "lng": -46.74261240530069
+  },
+  {
+    "id": "RES-048",
+    "titulo": "Kitnet em Lapa",
+    "segmento": "residencial",
+    "tipo": "kitnet",
+    "bairro": "Lapa",
+    "cidade": "São Paulo",
+    "preco": 680198.0,
+    "area_m2": 37.0,
+    "quartos": 1,
+    "vagas": 2,
+    "salas": null,
+    "descricao": "Imóvel residencial fictício (kitnet) no bairro Lapa, São Paulo. Área de 37 m², 1 quarto(s). Ideal para famílias ou investidores. Código RES-048.",
+    "amenities": [
+      "churrasqueira",
+      "portaria 24h",
+      "elevador",
+      "varanda",
+      "playground"
+    ],
+    "image_urls": [
+      "https://picsum.photos/seed/RES-048-1/800/600",
+      "https://picsum.photos/seed/RES-048-2/800/600",
+      "https://picsum.photos/seed/RES-048-3/800/600",
+      "https://picsum.photos/seed/RES-048-4/800/600"
+    ],
+    "lat": -23.639450928225806,
+    "lng": -46.65386609986813
+  },
+  {
+    "id": "RES-049",
+    "titulo": "Apartamento em Campo Belo",
+    "segmento": "residencial",
+    "tipo": "apartamento",
+    "bairro": "Campo Belo",
+    "cidade": "São Paulo",
+    "preco": 3113184.0,
+    "area_m2": 228.0,
+    "quartos": 3,
+    "vagas": 1,
+    "salas": null,
+    "descricao": "Imóvel residencial fictício (apartamento) no bairro Campo Belo, São Paulo. Área de 228 m², 3 quarto(s). Ideal para famílias ou investidores. Código RES-049.",
+    "amenities": [
+      "playground",
+      "portaria 24h",
+      "churrasqueira",
+      "piscina",
+      "academia"
+    ],
+    "image_urls": [
+      "https://picsum.photos/seed/RES-049-1/800/600",
+      "https://picsum.photos/seed/RES-049-2/800/600",
+      "https://picsum.photos/seed/RES-049-3/800/600",
+      "https://picsum.photos/seed/RES-049-4/800/600"
+    ],
+    "lat": -23.60114070795146,
+    "lng": -46.65103355500305
+  },
+  {
+    "id": "RES-050",
+    "titulo": "Casa em Vila Olímpia",
+    "segmento": "residencial",
+    "tipo": "casa",
+    "bairro": "Vila Olímpia",
+    "cidade": "São Paulo",
+    "preco": 3267414.0,
+    "area_m2": 210.0,
+    "quartos": 4,
+    "vagas": 2,
+    "salas": null,
+    "descricao": "Imóvel residencial fictício (casa) no bairro Vila Olímpia, São Paulo. Área de 210 m², 4 quarto(s). Ideal para famílias ou investidores. Código RES-050.",
+    "amenities": [
+      "churrasqueira",
+      "elevador",
+      "academia",
+      "varanda"
+    ],
+    "image_urls": [
+      "https://picsum.photos/seed/RES-050-1/800/600",
+      "https://picsum.photos/seed/RES-050-2/800/600",
+      "https://picsum.photos/seed/RES-050-3/800/600",
+      "https://picsum.photos/seed/RES-050-4/800/600"
+    ],
+    "lat": -23.47950350421456,
+    "lng": -46.49205039889509
+  }
+]

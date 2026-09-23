@@ -216,3 +216,7 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+data/app.db
+data/chroma/
+data/outbox/
+*.db

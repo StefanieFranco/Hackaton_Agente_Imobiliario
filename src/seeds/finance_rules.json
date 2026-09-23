@@ -1,0 +1,13 @@
+{
+  "taxa_anual_percent": 10.5,
+  "entrada_minima_percent": 20,
+  "prazo_max_meses": 360,
+  "prazo_opcoes": [
+    120,
+    180,
+    240,
+    360
+  ],
+  "sistema": "PRICE",
+  "observacao": "Regras fictícias para simulação acadêmica. Não representam oferta bancária real. Parcela estimada pelo sistema Price: PMT = PV * i*(1+i)^n / ((1+i)^n - 1)."
+}
