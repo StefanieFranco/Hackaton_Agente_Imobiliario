@@ -14,6 +14,7 @@ from sqlalchemy import (
     Text,
     create_engine,
 )
+from sqlalchemy import text
 from sqlalchemy.orm import DeclarativeBase, Mapped, mapped_column, relationship, sessionmaker
 
 from src.config import DB_PATH, ensure_data_dirs
@@ -78,6 +79,7 @@ class Lead(Base):
     seller: Mapped[Seller | None] = relationship(back_populates="leads")
     interactions: Mapped[list["Interaction"]] = relationship(back_populates="lead")
     appointments: Mapped[list["Appointment"]] = relationship(back_populates="lead")
+    conversation: Mapped["Conversation | None"] = relationship(back_populates="lead", uselist=False)
 
 
 class Interaction(Base):
@@ -112,6 +114,34 @@ class Appointment(Base):
     seller: Mapped[Seller] = relationship(back_populates="appointments")
 
 
+class Conversation(Base):
+    """Uma conversa por lead."""
+
+    __tablename__ = "conversations"
+
+    id: Mapped[str] = mapped_column(String(40), primary_key=True)
+    lead_id: Mapped[str] = mapped_column(ForeignKey("leads.id"), unique=True)
+    title: Mapped[str] = mapped_column(String(200), default="Atendimento")
+    pending_question: Mapped[str] = mapped_column(Text, default="")
+    created_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow)
+    updated_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow)
+
+    lead: Mapped[Lead] = relationship(back_populates="conversation")
+    messages: Mapped[list["ChatMessage"]] = relationship(back_populates="conversation")
+
+
+class ChatMessage(Base):
+    __tablename__ = "chat_messages"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True, autoincrement=True)
+    conversation_id: Mapped[str] = mapped_column(ForeignKey("conversations.id"))
+    role: Mapped[str] = mapped_column(String(20))  # user | assistant
+    content: Mapped[str] = mapped_column(Text)
+    created_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow)
+
+    conversation: Mapped[Conversation] = relationship(back_populates="messages")
+
+
 _engine = None
 _SessionLocal = None
 
@@ -134,3 +164,9 @@ def get_session():
 def init_db() -> None:
     engine = get_engine()
     Base.metadata.create_all(engine)
+    with engine.begin() as conn:
+        tables = {row[0] for row in conn.execute(text("SELECT name FROM sqlite_master WHERE type='table'"))}
+        if "conversations" in tables:
+            cols = {row[1] for row in conn.execute(text("PRAGMA table_info(conversations)"))}
+            if "pending_question" not in cols:
+                conn.execute(text("ALTER TABLE conversations ADD COLUMN pending_question TEXT DEFAULT ''"))

@@ -13,6 +13,8 @@ def search_properties(
     bairro: str | None = None,
     preco_min: float | None = None,
     preco_max: float | None = None,
+    quartos_min: int | None = None,
+    quartos_max: int | None = None,
     limit: int = 8,
 ) -> list[dict[str, Any]]:
     props = repo.list_properties(
@@ -21,6 +23,8 @@ def search_properties(
         bairro=bairro,
         preco_min=preco_min,
         preco_max=preco_max,
+        quartos_min=quartos_min,
+        quartos_max=quartos_max,
         limit=limit,
     )
     return [repo.property_to_dict(p) for p in props]
@@ -31,8 +35,10 @@ def summarize_properties(props: list[dict[str, Any]]) -> str:
         return "Nenhum imóvel encontrado com esses filtros."
     lines = []
     for p in props:
+        q = p.get("quartos")
+        qtxt = f"{q} qtos" if q is not None else "—"
         lines.append(
             f"- {p['id']} | {p['titulo']} | {p['bairro']} | "
-            f"R$ {p['preco']:,.0f} | {p['area_m2']} m² | segmento={p['segmento']}"
+            f"R$ {p['preco']:,.0f} | {p['area_m2']} m² | {qtxt} | segmento={p['segmento']}"
         )
     return "\n".join(lines)

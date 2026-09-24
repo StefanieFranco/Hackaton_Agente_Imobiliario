@@ -49,6 +49,8 @@ for i, p in enumerate(props):
         st.subheader(d["titulo"])
         st.write(f"**{d['id']}** · {d['bairro']} · {d['segmento']}")
         st.write(f"R$ {d['preco']:,.0f} · {d['area_m2']} m²")
+        if d.get("quartos"):
+            st.write(f"{d['quartos']} quarto(s)")
         if st.button("Ver detalhes", key=f"btn_{d['id']}"):
             st.session_state["selected_property_id"] = d["id"]
             st.switch_page("pages/3_Detalhe_Imovel.py")

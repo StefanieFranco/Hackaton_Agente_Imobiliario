@@ -33,6 +33,11 @@ def get_chat_model(
         model=model or OLLAMA_MODEL,
         base_url=OLLAMA_BASE_URL,
         temperature=OLLAMA_TEMPERATURE if temperature is None else temperature,
+        # 8B com contexto enorme trava a máquina; resposta curta cabe na demo
+        num_ctx=4096,
+        num_predict=320,
+        keep_alive="10m",
+        sync_client_kwargs={"timeout": 120},
     )
 
 

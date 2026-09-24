@@ -36,8 +36,75 @@ AMEN_RES = ["piscina", "academia", "portaria 24h", "churrasqueira", "playground"
 AMEN_COM = ["recepção", "ar-condicionado", "gerador", "estacionamento", "fibra ótica", "copa", "acesso 24h"]
 
 
-def images(pid: str, n: int = 4) -> list[str]:
-    return [f"https://picsum.photos/seed/{pid}-{i}/800/600" for i in range(1, n + 1)]
+PHOTOS = {
+    "apartamento": [
+        "photo-1522708323590-d24dbb6b0267",
+        "photo-1502672260266-1c1ef2d93688",
+        "photo-1560448204-e02f11c3d0e2",
+        "photo-1493809842364-78817add7ffb",
+        "photo-1560185007-cde436f6a4d0",
+    ],
+    "casa": [
+        "photo-1564013799919-ab600027ffc6",
+        "photo-1570129477492-45c003edd2be",
+        "photo-1568605114967-8130f3a36994",
+        "photo-1600596542815-ffad4c1539a9",
+        "photo-1600585154340-be6161a56a0c",
+    ],
+    "cobertura": [
+        "photo-1600607687939-ce8a6c25118c",
+        "photo-1600566753190-17f0baa2a6c3",
+        "photo-1600210492486-724fe5c67fb0",
+        "photo-1600607687644-c7171b42498f",
+        "photo-1600585154526-990dced4db0d",
+    ],
+    "kitnet": [
+        "photo-1554995207-c18c203602cb",
+        "photo-1536376072261-38c75010e6c9",
+        "photo-1522771739844-6a9f6d5f14af",
+        "photo-1505691938895-1758d7feb511",
+        "photo-1616594039964-ae9021a400a0",
+    ],
+    "escritorio": [
+        "photo-1497366216548-37526070297c",
+        "photo-1497366811353-6870744d04b2",
+        "photo-1524758631624-e2822e304c36",
+        "photo-1497366754035-f200968a6e72",
+        "photo-1604328698692-f76ea9498e76",
+    ],
+    "loja": [
+        "photo-1441986300917-64674bd600d8",
+        "photo-1604719312566-8912e9227c6a",
+        "photo-1555529669-e69e7aa0ba9a",
+        "photo-1528698827591-e19ccd7bc23d",
+        "photo-1472851294608-062f824d29cc",
+    ],
+    "galpao": [
+        "photo-1586528116311-ad8dd3c8310d",
+        "photo-1553413077-190dd305871c",
+        "photo-1565610222536-ef125c59da2e",
+        "photo-1587293852726-70cdb56c2866",
+        "photo-1504328345606-18bbc8c9d7d1",
+    ],
+    "sala_comercial": [
+        "photo-1497366412874-3415097a27e7",
+        "photo-1497366754035-f200968a6e72",
+        "photo-1631679706909-1844bbd07221",
+        "photo-1524758631624-e2822e304c36",
+        "photo-1604328698692-f76ea9498e76",
+    ],
+}
+
+
+def images_for(tipo: str, index: int, n: int = 3) -> list[str]:
+    pool = PHOTOS.get(tipo, PHOTOS["apartamento"])
+    urls = []
+    for offset in range(n):
+        photo = pool[(index + offset) % len(pool)]
+        urls.append(
+            f"https://images.unsplash.com/{photo}?auto=format&fit=crop&w=800&h=600&q=80"
+        )
+    return urls
 
 
 def gen_residential(n: int = 50) -> list[dict]:
@@ -73,7 +140,7 @@ def gen_residential(n: int = 50) -> list[dict]:
                 f"Código {pid}."
             ),
             "amenities": random.sample(AMEN_RES, k=random.randint(3, 5)),
-            "image_urls": images(pid),
+            "image_urls": images_for(tipo, i),
             "lat": -23.55 + random.uniform(-0.12, 0.12),
             "lng": -46.63 + random.uniform(-0.15, 0.15),
         })
@@ -116,7 +183,7 @@ def gen_commercial(n: int = 50) -> list[dict]:
                 f"Código {pid}."
             ),
             "amenities": random.sample(AMEN_COM, k=random.randint(3, 5)),
-            "image_urls": images(pid),
+            "image_urls": images_for(tipo, i),
             "lat": -23.55 + random.uniform(-0.12, 0.12),
             "lng": -46.63 + random.uniform(-0.15, 0.15),
         })

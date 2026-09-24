@@ -1,10 +1,9 @@
-"""Ingestão de documentos seed no ChromaDB."""
+"""Ingestão de documentos seed no ChromaDB (metadata rica para hybrid + filtros)."""
 
 from __future__ import annotations
 
 import json
 import shutil
-from pathlib import Path
 
 from langchain_chroma import Chroma
 from langchain_core.documents import Document
@@ -27,9 +26,16 @@ def build_documents() -> list[Document]:
                 page_content=f"{item['titulo']}\n\n{item['conteudo']}",
                 metadata={
                     "doc_id": item["id"],
+                    "doc_kind": item.get("tipo", "geral"),
                     "tipo": item.get("tipo", "geral"),
                     "titulo": item["titulo"],
                     "fonte": "seed",
+                    "bairro": "",
+                    "segmento": "",
+                    "property_tipo": "",
+                    "preco": -1.0,
+                    "quartos": -1,
+                    "area_m2": -1.0,
                 },
             )
         )
@@ -47,16 +53,23 @@ def build_documents() -> list[Document]:
             ),
             metadata={
                 "doc_id": "FIN-RULES",
+                "doc_kind": "financiamento",
                 "tipo": "financiamento",
                 "titulo": "Regras de financiamento",
                 "fonte": "seed",
+                "bairro": "",
+                "segmento": "",
+                "property_tipo": "",
+                "preco": -1.0,
+                "quartos": -1,
+                "area_m2": -1.0,
             },
         )
     )
 
-    # descrições de imóveis também entram no RAG (amostra rica)
     for name in ("properties_residential.json", "properties_commercial.json"):
         for p in _load_json(name):
+            quartos = p.get("quartos")
             docs.append(
                 Document(
                     page_content=(
@@ -64,15 +77,23 @@ def build_documents() -> list[Document]:
                         f"Segmento: {p['segmento']} | Tipo: {p['tipo']}\n"
                         f"Local: {p['bairro']}, {p['cidade']}\n"
                         f"Preço: R$ {p['preco']:,.2f} | Área: {p['area_m2']} m²\n"
+                        f"Quartos: {quartos if quartos is not None else 'N/A'}\n"
+                        f"Vagas: {p.get('vagas')} | Salas: {p.get('salas')}\n"
                         f"{p['descricao']}\n"
                         f"Comodidades: {', '.join(p.get('amenities', []))}"
                     ),
                     metadata={
                         "doc_id": p["id"],
+                        "doc_kind": "imovel",
                         "tipo": "imovel",
                         "titulo": p["titulo"],
                         "bairro": p["bairro"],
+                        "cidade": p.get("cidade", ""),
                         "segmento": p["segmento"],
+                        "property_tipo": p["tipo"],
+                        "preco": float(p["preco"]),
+                        "quartos": int(quartos) if quartos is not None else -1,
+                        "area_m2": float(p["area_m2"]),
                         "fonte": "seed",
                     },
                 )
@@ -83,7 +104,6 @@ def build_documents() -> list[Document]:
 def ingest_all_documents(reset: bool = True) -> int:
     ensure_data_dirs()
     if reset and CHROMA_DIR.exists():
-        # remove coleção anterior
         shutil.rmtree(CHROMA_DIR, ignore_errors=True)
         CHROMA_DIR.mkdir(parents=True, exist_ok=True)
 
@@ -98,6 +118,14 @@ def ingest_all_documents(reset: bool = True) -> int:
         persist_directory=str(CHROMA_DIR),
         collection_name=CHROMA_COLLECTION,
     )
+
+    try:
+        from src.rag.hybrid import invalidate_bm25_cache
+
+        invalidate_bm25_cache()
+    except Exception:
+        pass
+
     return len(chunks)
 
 

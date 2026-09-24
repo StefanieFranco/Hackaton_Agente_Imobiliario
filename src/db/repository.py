@@ -10,7 +10,16 @@ from sqlalchemy import func, select
 from sqlalchemy.orm import Session
 
 from src.config import REENGAGEMENT_DAYS
-from src.db.models import Appointment, Interaction, Lead, Property, Seller, get_session
+from src.db.models import (
+    Appointment,
+    ChatMessage,
+    Conversation,
+    Interaction,
+    Lead,
+    Property,
+    Seller,
+    get_session,
+)
 
 
 def _to_json(value: Any) -> str:
@@ -36,6 +45,8 @@ def list_properties(
     bairro: str | None = None,
     preco_min: float | None = None,
     preco_max: float | None = None,
+    quartos_min: int | None = None,
+    quartos_max: int | None = None,
     limit: int = 50,
 ) -> list[Property]:
     own = session is None
@@ -52,6 +63,10 @@ def list_properties(
             q = q.where(Property.preco >= preco_min)
         if preco_max is not None:
             q = q.where(Property.preco <= preco_max)
+        if quartos_min is not None:
+            q = q.where(Property.quartos >= quartos_min)
+        if quartos_max is not None:
+            q = q.where(Property.quartos <= quartos_max)
         q = q.order_by(Property.preco).limit(limit)
         return list(session.scalars(q).all())
     finally:
@@ -394,6 +409,289 @@ def top_bairros_buscados(session: Session | None = None, limit: int = 5) -> list
     finally:
         if own:
             session.close()
+
+
+def start_attendance(opening_message: str) -> dict[str, Any]:
+    """Abre um atendimento sem formulário. O agente pede nome e e-mail na conversa."""
+    import uuid
+
+    session = get_session()
+    try:
+        seller = session.scalars(select(Seller).order_by(Seller.id)).first()
+        lead_id = f"LEAD-{uuid.uuid4().hex[:6].upper()}"
+        lead = Lead(
+            id=lead_id,
+            nome="Visitante",
+            email=f"pendente-{lead_id.lower()}@pendente.local",
+            telefone="",
+            origem="direto",
+            status="novo",
+            chat_finalizado=False,
+            preferencias_resumo="",
+            ultimas_buscas="[]",
+            seller_id=seller.id if seller else None,
+            created_at=datetime.utcnow(),
+            last_interaction_at=datetime.utcnow(),
+        )
+        conv = Conversation(
+            id=f"CONV-{lead_id}",
+            lead_id=lead_id,
+            title="Novo atendimento",
+            pending_question="",
+            created_at=datetime.utcnow(),
+            updated_at=datetime.utcnow(),
+        )
+        session.add(lead)
+        session.add(conv)
+        session.flush()
+        if opening_message.strip():
+            session.add(
+                ChatMessage(
+                    conversation_id=conv.id,
+                    role="assistant",
+                    content=opening_message,
+                    created_at=datetime.utcnow(),
+                )
+            )
+        session.commit()
+        return {
+            "lead_id": lead.id,
+            "conversation_id": conv.id,
+            "nome": lead.nome,
+            "email": lead.email,
+            "identified": False,
+        }
+    finally:
+        session.close()
+
+
+def lead_is_identified(email: str | None) -> bool:
+    if not email:
+        return False
+    return not email.lower().endswith("@pendente.local")
+
+
+def set_pending_question(conversation_id: str, question: str) -> None:
+    session = get_session()
+    try:
+        conv = session.get(Conversation, conversation_id)
+        if conv and question.strip() and not (conv.pending_question or "").strip():
+            conv.pending_question = question.strip()
+            session.commit()
+    finally:
+        session.close()
+
+
+def take_pending_question(conversation_id: str) -> str:
+    session = get_session()
+    try:
+        conv = session.get(Conversation, conversation_id)
+        if not conv:
+            return ""
+        question = conv.pending_question or ""
+        conv.pending_question = ""
+        session.commit()
+        return question
+    finally:
+        session.close()
+
+
+def identify_conversation(conversation_id: str, nome: str, email: str) -> dict[str, Any]:
+    """Grava nome e e-mail no lead. Se o e-mail já existir, une na conversa daquele lead."""
+    session = get_session()
+    try:
+        conv = session.get(Conversation, conversation_id)
+        if not conv:
+            raise ValueError("Conversa não encontrada")
+        lead = session.get(Lead, conv.lead_id)
+        email_norm = email.strip().lower()
+        nome = nome.strip()
+        other = session.scalars(
+            select(Lead).where(func.lower(Lead.email) == email_norm, Lead.id != lead.id)
+        ).first()
+        if other:
+            other_conv = session.scalars(
+                select(Conversation).where(Conversation.lead_id == other.id)
+            ).first()
+            if other_conv is None:
+                other_conv = Conversation(
+                    id=f"CONV-{other.id}",
+                    lead_id=other.id,
+                    title=f"Atendimento — {nome or other.nome}",
+                    pending_question=conv.pending_question or "",
+                    created_at=datetime.utcnow(),
+                    updated_at=datetime.utcnow(),
+                )
+                session.add(other_conv)
+                session.flush()
+            elif conv.pending_question and not other_conv.pending_question:
+                other_conv.pending_question = conv.pending_question
+            for msg in session.scalars(select(ChatMessage).where(ChatMessage.conversation_id == conv.id)):
+                msg.conversation_id = other_conv.id
+            other.nome = nome or other.nome
+            other.last_interaction_at = datetime.utcnow()
+            other_conv.updated_at = datetime.utcnow()
+            other_conv.title = f"Atendimento — {other.nome}"
+            session.delete(conv)
+            session.delete(lead)
+            session.commit()
+            return {
+                "lead_id": other.id,
+                "conversation_id": other_conv.id,
+                "nome": other.nome,
+                "email": other.email,
+                "identified": True,
+            }
+
+        lead.nome = nome
+        lead.email = email_norm
+        lead.last_interaction_at = datetime.utcnow()
+        conv.title = f"Atendimento — {nome}"
+        conv.updated_at = datetime.utcnow()
+        session.commit()
+        return {
+            "lead_id": lead.id,
+            "conversation_id": conv.id,
+            "nome": lead.nome,
+            "email": lead.email,
+            "identified": True,
+        }
+    finally:
+        session.close()
+
+
+def get_or_create_lead_conversation(nome: str, email: str) -> dict[str, Any]:
+    """Reabre o lead pelo e-mail ou cria um novo. Sempre devolve a única conversa."""
+    import uuid
+
+    nome = nome.strip()
+    email_norm = email.strip().lower()
+    session = get_session()
+    try:
+        lead = session.scalars(select(Lead).where(func.lower(Lead.email) == email_norm)).first()
+        if lead is None:
+            seller = session.scalars(select(Seller).order_by(Seller.id)).first()
+            lead = Lead(
+                id=f"LEAD-{uuid.uuid4().hex[:6].upper()}",
+                nome=nome,
+                email=email_norm,
+                telefone="",
+                origem="direto",
+                status="novo",
+                chat_finalizado=False,
+                preferencias_resumo="",
+                ultimas_buscas="[]",
+                seller_id=seller.id if seller else None,
+                created_at=datetime.utcnow(),
+                last_interaction_at=datetime.utcnow(),
+            )
+            session.add(lead)
+            session.flush()
+        elif nome and lead.nome != nome:
+            lead.nome = nome
+
+        conv = session.scalars(select(Conversation).where(Conversation.lead_id == lead.id)).first()
+        if conv is None:
+            conv = Conversation(
+                id=f"CONV-{lead.id}",
+                lead_id=lead.id,
+                title=f"Atendimento — {lead.nome}",
+                created_at=datetime.utcnow(),
+                updated_at=datetime.utcnow(),
+            )
+            session.add(conv)
+        session.commit()
+        return {
+            "lead_id": lead.id,
+            "conversation_id": conv.id,
+            "nome": lead.nome,
+            "email": lead.email,
+        }
+    finally:
+        session.close()
+
+
+def list_conversation_menu(search: str | None = None) -> list[dict[str, Any]]:
+    session = get_session()
+    try:
+        q = select(Conversation).order_by(Conversation.updated_at.desc())
+        rows = []
+        for conv in session.scalars(q).all():
+            lead = session.get(Lead, conv.lead_id)
+            nome = lead.nome if lead else conv.title
+            email = lead.email if lead else ""
+            identified = bool(email) and not email.lower().endswith("@pendente.local")
+            if not identified:
+                nome = "Novo atendimento"
+                email = ""
+            if search and search.lower() not in nome.lower() and search.lower() not in (conv.title or "").lower():
+                continue
+            last = session.scalars(
+                select(ChatMessage)
+                .where(ChatMessage.conversation_id == conv.id)
+                .order_by(ChatMessage.created_at.desc())
+                .limit(1)
+            ).first()
+            preview = (last.content if last else "Sem mensagens")[:80]
+            rows.append(
+                {
+                    "conversation_id": conv.id,
+                    "lead_id": conv.lead_id,
+                    "nome": nome,
+                    "email": email,
+                    "identified": identified,
+                    "title": conv.title,
+                    "preview": preview,
+                    "updated_at": conv.updated_at,
+                }
+            )
+        return rows
+    finally:
+        session.close()
+
+
+def list_chat_messages(conversation_id: str) -> list[dict[str, Any]]:
+    session = get_session()
+    try:
+        msgs = session.scalars(
+            select(ChatMessage)
+            .where(ChatMessage.conversation_id == conversation_id)
+            .order_by(ChatMessage.created_at)
+        ).all()
+        return [
+            {
+                "role": m.role,
+                "content": m.content,
+                "created_at": m.created_at,
+            }
+            for m in msgs
+        ]
+    finally:
+        session.close()
+
+
+def add_chat_message(conversation_id: str, role: str, content: str) -> None:
+    session = get_session()
+    try:
+        session.add(
+            ChatMessage(
+                conversation_id=conversation_id,
+                role=role,
+                content=content,
+                created_at=datetime.utcnow(),
+            )
+        )
+        conv = session.get(Conversation, conversation_id)
+        if conv:
+            conv.updated_at = datetime.utcnow()
+            if role == "user" and content:
+                conv.title = content.strip()[:80]
+            lead = session.get(Lead, conv.lead_id) if conv else None
+            if lead:
+                lead.last_interaction_at = datetime.utcnow()
+        session.commit()
+    finally:
+        session.close()
 
 
 def origem_distribution(session: Session | None = None) -> dict[str, int]:

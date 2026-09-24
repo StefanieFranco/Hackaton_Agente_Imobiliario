@@ -32,34 +32,27 @@ def _merge_output(state: AgentState, key: str, text: str) -> dict[str, Any]:
     return {"agent_outputs": outputs}
 
 
+def _heuristic_intent(query: str) -> str:
+    q = query.lower()
+    if any(w in q for w in ("agendar", "visita", "calendário", "consulta")):
+        return "agendamento"
+    if any(w in q for w in ("financi", "parcela", "entrada")):
+        return "financiamento"
+    if any(w in q for w in ("contrato", "itbi", "juríd", "jurid", "document")):
+        return "juridico"
+    if any(w in q for w in ("avali", "quanto vale", "preço justo", "preco justo")):
+        return "avaliacao"
+    if any(w in q for w in ("lead", "origem", "crm", "contato")):
+        return "crm"
+    if any(w in q for w in ("buscar", "apto", "apartamento", "casa", "galpão", "galpao", "escritório", "escritorio", "imóvel", "imovel", "comprar")):
+        return "busca"
+    return "vendas"
+
+
 def supervisor_node(state: AgentState) -> dict[str, Any]:
     query = state.get("user_query") or ""
-    system = (
-        "Você é o Supervisor de uma imobiliária multiagente. "
-        "Classifique a intenção do usuário em UMA etiqueta dentre: "
-        f"{', '.join(INTENTS)}. "
-        "Responda APENAS com a etiqueta, sem explicação."
-    )
-    try:
-        raw = invoke_text(system, query, model=state.get("model_name")).strip().lower()
-        intent = next((i for i in INTENTS if i in raw), "geral")
-    except Exception:
-        # heurística offline
-        q = query.lower()
-        if any(w in q for w in ("agendar", "visita", "calendário", "consulta")):
-            intent = "agendamento"
-        elif any(w in q for w in ("financi", "parcela", "entrada")):
-            intent = "financiamento"
-        elif any(w in q for w in ("contrato", "itbi", "juríd", "document")):
-            intent = "juridico"
-        elif any(w in q for w in ("avali", "quanto vale", "preço justo")):
-            intent = "avaliacao"
-        elif any(w in q for w in ("lead", "origem", "crm", "contato")):
-            intent = "crm"
-        elif any(w in q for w in ("buscar", "apto", "apartamento", "casa", "galpão", "escritório", "imóvel")):
-            intent = "busca"
-        else:
-            intent = "vendas"
+    # Classificação local: uma chamada extra ao Llama 8B deixava o chat parado.
+    intent = _heuristic_intent(query)
 
     route_map = {
         "busca": ["busca", "crm", "sintese"],
@@ -100,12 +93,42 @@ def _extract_filters(query: str) -> dict[str, Any]:
     m = re.search(r"até\s*r?\$?\s*([\d\.]+)", q)
     if m:
         filters["preco_max"] = float(m.group(1).replace(".", ""))
-    m2 = re.search(r"em\s+([a-záéíóúãõç\s]+?)(?:\s+até|\s+com|,|\.|$)", q)
+    m_min = re.search(r"(?:a\s*partir\s*de|desde|mínimo)\s*r?\$?\s*([\d\.]+)", q)
+    if m_min:
+        filters["preco_min"] = float(m_min.group(1).replace(".", ""))
+
+    m_q = re.search(r"(\d+)\s*quartos?", q)
+    if m_q:
+        filters["quartos_min"] = int(m_q.group(1))
+    m_q2 = re.search(r"pelo\s*menos\s*(\d+)\s*quartos?", q)
+    if m_q2:
+        filters["quartos_min"] = int(m_q2.group(1))
+
+    m2 = re.search(r"em\s+([a-záéíóúãõç\s]+?)(?:\s+até|\s+com|\s+de\s+\d|,|\.|$)", q)
     if m2:
         bairro = m2.group(1).strip().title()
         if len(bairro) > 2 and bairro.lower() not in ("sao paulo", "são paulo"):
             filters["bairro"] = bairro
     return filters
+
+
+def _structured_from_filters(filters: dict[str, Any]) -> dict[str, Any]:
+    structured: dict[str, Any] = {"somente_imoveis": True}
+    if filters.get("segmento"):
+        structured["segmento"] = filters["segmento"]
+    if filters.get("tipo"):
+        structured["property_tipo"] = filters["tipo"]
+    if filters.get("bairro"):
+        structured["bairro"] = filters["bairro"]
+    if filters.get("preco_min") is not None:
+        structured["preco_min"] = filters["preco_min"]
+    if filters.get("preco_max") is not None:
+        structured["preco_max"] = filters["preco_max"]
+    if filters.get("quartos_min") is not None:
+        structured["quartos_min"] = filters["quartos_min"]
+    if filters.get("quartos_max") is not None:
+        structured["quartos_max"] = filters["quartos_max"]
+    return structured
 
 
 def busca_node(state: AgentState) -> dict[str, Any]:
@@ -115,10 +138,14 @@ def busca_node(state: AgentState) -> dict[str, Any]:
         segmento=filters.get("segmento"),
         tipo=filters.get("tipo"),
         bairro=filters.get("bairro"),
+        preco_min=filters.get("preco_min"),
         preco_max=filters.get("preco_max"),
+        quartos_min=filters.get("quartos_min"),
+        quartos_max=filters.get("quartos_max"),
         limit=6,
     )
-    docs = retrieve(query, k=3)
+    structured = _structured_from_filters(filters)
+    docs = retrieve(query, k=4, structured=structured)
     context = format_context(docs)
     listing = property_search.summarize_properties(props)
 
@@ -264,19 +291,6 @@ def crm_node(state: AgentState) -> dict[str, Any]:
             "Nenhum lead vinculado. Selecione um lead na sidebar do chat para "
             "catalogar origem (Google, QuintoAndar, ZAP), contatos e preferências."
         )
-    else:
-        system = (
-            "Você é o Agente CRM. Resuma o perfil do lead, origem da captação e "
-            "preferências das últimas buscas. Sugira abordagem de contato."
-        )
-        try:
-            text = invoke_text(
-                system,
-                f"Consulta: {state.get('user_query')}\n\nPerfil:\n{text}",
-                model=state.get("model_name"),
-            )
-        except Exception:
-            pass
     return _merge_output(state, "crm", text)
 
 
@@ -327,19 +341,12 @@ def agendamento_node(state: AgentState) -> dict[str, Any]:
 
 def sintese_node(state: AgentState) -> dict[str, Any]:
     outputs = state.get("agent_outputs") or {}
-    parts = "\n\n".join(f"### {k}\n{v}" for k, v in outputs.items())
-    system = (
-        "Você é o Agente de Síntese. Una as contribuições dos especialistas em uma "
-        "resposta final clara, em português, para o cliente. Sem repetir cabeçalhos técnicos."
-    )
-    try:
-        final = invoke_text(
-            system,
-            f"Pergunta do usuário: {state.get('user_query')}\n\nContribuições:\n{parts}",
-            model=state.get("model_name"),
-        )
-    except Exception:
-        final = parts or "Não foi possível gerar resposta."
+    intent = state.get("intent") or ""
+    final = outputs.get(intent) or ""
+    if not final and outputs:
+        final = next(iter(outputs.values()))
+    if not final:
+        final = "Não foi possível gerar resposta."
     return {
         "final_response": final,
         "messages": [AIMessage(content=final)],
