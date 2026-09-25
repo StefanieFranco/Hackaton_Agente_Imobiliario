@@ -39,6 +39,7 @@ def build_report(
     appts = repo.appointment_stats(seller_id=seller_id, start=start, end=end)
     bairros = repo.top_bairros_buscados()
     origens = repo.origem_distribution()
+    regioes = _region_snapshot(bairros)
 
     gerados = funnel.get("total", 0)
     interessados = funnel.get("interessado", 0)
@@ -64,10 +65,12 @@ def build_report(
         "conv_compra_pct": rate(comprados, negociacao or gerados),
         "agendamentos": appts,
         "top_bairros": bairros,
+        "regioes": regioes,
         "origens": origens,
     }
 
     narrative = ""
+    suggestions = ""
     if with_narrative:
         system = (
             "Você é analista imobiliário. Explique os números em português claro, "
@@ -85,5 +88,63 @@ def build_report(
                 f"Principais origens: {origens}. Bairros mais buscados: {bairros}. "
                 f"(Narrativa fallback sem LLM: {exc})"
             )
+        suggestions = _sales_suggestions(regioes, model=model)
     metrics["narrative"] = narrative
+    metrics["suggestions"] = suggestions
     return metrics
+
+
+def _region_snapshot(bairros: list[tuple[str, int]]) -> list[dict[str, Any]]:
+    """Estoque do catálogo nas regiões mais buscadas, para fundamentar as sugestões."""
+    rows: list[dict[str, Any]] = []
+    for bairro, buscas in bairros:
+        props = repo.list_properties(bairro=bairro, limit=100)
+        if not props:
+            rows.append({"bairro": bairro, "buscas": buscas, "imoveis": 0})
+            continue
+        precos = [p.preco for p in props]
+        rows.append(
+            {
+                "bairro": bairro,
+                "buscas": buscas,
+                "imoveis": len(props),
+                "preco_medio": round(sum(precos) / len(precos), 2),
+                "preco_min": round(min(precos), 2),
+                "preco_max": round(max(precos), 2),
+                "residencial": sum(1 for p in props if p.segmento == "residencial"),
+                "empresarial": sum(1 for p in props if p.segmento == "empresarial"),
+            }
+        )
+    return rows
+
+
+def _sales_suggestions(regioes: list[dict[str, Any]], model: str | None = None) -> str:
+    if not regioes:
+        return "Ainda não há buscas suficientes para sugerir ações por região."
+    system = (
+        "Você é gerente comercial de uma imobiliária. "
+        "Escreva sugestões práticas, em português, para aprimorar as vendas "
+        "nas regiões mais procuradas. Use só os dados fornecidos. "
+        "Para cada região, dê 2 ações concretas (abordagem, estoque, visita ou anúncio). "
+        "Feche com uma prioridade da semana."
+    )
+    try:
+        return invoke_text(system, f"Regiões mais procuradas e estoque:\n{regioes}", model=model)
+    except Exception:
+        lines = ["Sugestões com base no estoque local (sem o modelo de linguagem):"]
+        for row in regioes:
+            bairro = row["bairro"]
+            if not row.get("imoveis"):
+                lines.append(
+                    f"- {bairro}: há {row['buscas']} buscas e nenhum imóvel ativo. "
+                    "Priorize captação nessa região."
+                )
+                continue
+            lines.append(
+                f"- {bairro}: {row['buscas']} buscas e {row['imoveis']} imóveis "
+                f"({row['residencial']} residenciais, {row['empresarial']} empresariais), "
+                f"preço médio R$ {row['preco_medio']:,.0f}. "
+                "Ofereça visita nos anúncios dessa faixa e retome os leads que buscaram o bairro."
+            )
+        lines.append("Prioridade: começar pela região com mais buscas e estoque disponível.")
+        return "\n".join(lines)

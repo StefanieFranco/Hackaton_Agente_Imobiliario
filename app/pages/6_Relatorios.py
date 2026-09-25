@@ -74,3 +74,8 @@ with col_b:
 
 st.subheader("Análise narrativa")
 st.write(report.get("narrative") or "")
+
+st.subheader("Sugestões para aprimorar vendas nas regiões mais procuradas")
+if report.get("regioes"):
+    st.dataframe(pd.DataFrame(report["regioes"]))
+st.write(report.get("suggestions") or "")
