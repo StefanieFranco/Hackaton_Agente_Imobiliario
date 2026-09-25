@@ -221,3 +221,6 @@ data/chroma/
 data/outbox/
 *.db
 models/*.gguf
+
+
+.idea
