@@ -411,7 +411,7 @@ def top_bairros_buscados(session: Session | None = None, limit: int = 5) -> list
             session.close()
 
 
-def start_attendance(opening_message: str) -> dict[str, Any]:
+def start_attendance(opening_message: str, origem: str = "site") -> dict[str, Any]:
     """Abre um atendimento sem formulário. O agente pede nome e e-mail na conversa."""
     import uuid
 
@@ -424,7 +424,7 @@ def start_attendance(opening_message: str) -> dict[str, Any]:
             nome="Visitante",
             email=f"pendente-{lead_id.lower()}@pendente.local",
             telefone="",
-            origem="direto",
+            origem=origem,
             status="novo",
             chat_finalizado=False,
             preferencias_resumo="",
@@ -560,6 +560,17 @@ def identify_conversation(conversation_id: str, nome: str, email: str) -> dict[s
         session.close()
 
 
+def set_lead_origem(lead_id: str, origem: str) -> None:
+    session = get_session()
+    try:
+        lead = session.get(Lead, lead_id)
+        if lead and lead.origem != origem:
+            lead.origem = origem
+            session.commit()
+    finally:
+        session.close()
+
+
 def get_or_create_lead_conversation(nome: str, email: str) -> dict[str, Any]:
     """Reabre o lead pelo e-mail ou cria um novo. Sempre devolve a única conversa."""
     import uuid
@@ -640,6 +651,7 @@ def list_conversation_menu(search: str | None = None) -> list[dict[str, Any]]:
                     "nome": nome,
                     "email": email,
                     "identified": identified,
+                    "origem": lead.origem if lead else "",
                     "title": conv.title,
                     "preview": preview,
                     "updated_at": conv.updated_at,

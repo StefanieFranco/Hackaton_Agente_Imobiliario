@@ -26,6 +26,15 @@ from src.services.reengagement import run_reengagement
 st.set_page_config(page_title="Chat Agentes", layout="wide")
 init_db()
 
+ORIGENS = {
+    "Site": "site",
+    "App": "app",
+    "WhatsApp": "whatsapp",
+    "QuintoAndar": "quinto_andar",
+    "ZAP": "zap",
+    "Coelho da Fonseca": "coelho_da_fonseca",
+}
+
 st.markdown(
     """
     <style>
@@ -65,6 +74,18 @@ with st.sidebar:
     else:
         st.caption("A conversa começa com o pedido de nome e e-mail.")
     model = st.selectbox("Modelo Ollama", [OLLAMA_MODEL, "llama3.2:3b", "llama3.1:8b"], index=0)
+    origem_labels = list(ORIGENS)
+    origem_codes = list(ORIGENS.values())
+    atual = (active or {}).get("origem") or "site"
+    if atual not in origem_codes:
+        origem_labels = [atual.replace("_", " ").title()] + origem_labels
+        origem_codes = [atual] + origem_codes
+    origem_idx = origem_codes.index(atual)
+    origem_label = st.selectbox("Origem do atendimento", origem_labels, index=origem_idx)
+    origem = dict(zip(origem_labels, origem_codes))[origem_label]
+    if active and active.get("origem") != origem:
+        repo.set_lead_origem(active["lead_id"], origem)
+        st.rerun()
     if st.button("Verificar leads inativos"):
         with st.spinner(f"Leads sem interação há {REENGAGEMENT_DAYS}+ dias..."):
             results = run_reengagement(model=model)
@@ -118,7 +139,7 @@ with col_hist:
     st.markdown("### Conversas")
     search = st.text_input("Buscar", placeholder="Nome do lead", label_visibility="collapsed")
     if st.button("Novo atendimento", use_container_width=True):
-        opened = repo.start_attendance(ASK_IDENTITY)
+        opened = repo.start_attendance(ASK_IDENTITY, origem=origem)
         st.session_state.conversation_id = opened["conversation_id"]
         st.session_state.active_lead_id = opened["lead_id"]
         st.session_state.last_result = {}
@@ -142,7 +163,7 @@ with col_chat:
         st.caption("A conversa começa aqui, como no WhatsApp. O agente pede nome e e-mail antes de responder.")
         prompt = st.chat_input("Escreva uma mensagem...")
         if prompt:
-            opened = repo.start_attendance("")
+            opened = repo.start_attendance("", origem=origem)
             _open_chat(opened["conversation_id"], opened["lead_id"])
             repo.add_chat_message(opened["conversation_id"], "user", prompt)
             identity = _parse_identity(prompt)
