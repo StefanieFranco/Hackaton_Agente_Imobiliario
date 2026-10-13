@@ -52,13 +52,7 @@ st.write("**Comodidades:**", ", ".join(d.get("amenities") or []))
 col_a, col_b = st.columns(2)
 with col_a:
     if st.button("Falar no chat sobre este imóvel"):
-        st.session_state.setdefault("messages", [])
-        st.session_state["messages"].append(
-            {
-                "role": "user",
-                "content": f"Quero saber mais sobre o imóvel {d['id']} em {d['bairro']}.",
-            }
-        )
+        st.session_state["chat_outgoing"] = f"Agendar visita no imóvel {d['id']}"
         st.switch_page("pages/1_Chat_Agentes.py")
 with col_b:
     st.info("Para agendar visita, use o Chat com um lead selecionado e peça: "

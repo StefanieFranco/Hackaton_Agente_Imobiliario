@@ -27,6 +27,7 @@ def build_graph():
     g.add_node("crm", nodes.crm_node)
     g.add_node("agendamento", nodes.agendamento_node)
     g.add_node("sintese", nodes.sintese_node)
+    g.add_node("verificar_resposta", nodes.verificar_resposta_node)
 
     g.add_edge(START, "supervisor")
     g.add_conditional_edges(
@@ -56,7 +57,8 @@ def build_graph():
     g.add_edge("vendas", "sintese")
     g.add_edge("crm", "sintese")
     g.add_edge("agendamento", "sintese")
-    g.add_edge("sintese", END)
+    g.add_edge("sintese", "verificar_resposta")
+    g.add_edge("verificar_resposta", END)
 
     return g.compile()
 
@@ -75,6 +77,8 @@ def run_agent(
     user_query: str,
     lead_id: str | None = None,
     model_name: str | None = None,
+    chat_history: list[dict[str, str]] | None = None,
+    schedule_draft: dict[str, Any] | None = None,
 ) -> dict[str, Any]:
     app = get_app()
     result = app.invoke(
@@ -82,11 +86,14 @@ def run_agent(
             "user_query": user_query,
             "lead_id": lead_id,
             "model_name": model_name,
+            "chat_history": list(chat_history or [])[-3:],
+            "schedule_draft": schedule_draft,
             "messages": [],
             "agent_outputs": {},
             "retrieved_docs": [],
             "properties_found": [],
             "route": [],
+            "response_truncated": False,
         }
     )
     return result

@@ -33,9 +33,7 @@ def build_report(
     model: str | None = None,
 ) -> dict[str, Any]:
     start, end = period_bounds(periodo)
-    # Para demo acadêmica: funil considera created_at no período OU todos se quiser visão geral.
-    # Usamos visão geral do funil atual + agendamentos no período.
-    funnel = repo.funnel_counts(seller_id=seller_id)
+    funnel = repo.funnel_counts(seller_id=seller_id, start=start, end=end)
     appts = repo.appointment_stats(seller_id=seller_id, start=start, end=end)
     bairros = repo.top_bairros_buscados()
     origens = repo.origem_distribution()
@@ -74,12 +72,27 @@ def build_report(
     if with_narrative:
         system = (
             "Você é analista imobiliário. Explique os números em português claro, "
-            "com 2–4 parágrafos, destacando insights úteis para gestores. "
-            "Não invente métricas além das fornecidas."
+            "em parágrafos completos. Cubra funil, conversões, agendamentos e bairros. "
+            "Não liste o preço de cada bairro e não corte a última frase."
         )
-        user = f"Métricas do relatório:\n{metrics}"
+        resumo = {
+            "periodo": periodo,
+            "inicio": start.date().isoformat(),
+            "fim": end.date().isoformat(),
+            "leads_gerados": gerados,
+            "interessados": interessados,
+            "negociacao": negociacao,
+            "comprados": comprados,
+            "conversao_interessado_pct": metrics["conv_interessado_pct"],
+            "conversao_negociacao_pct": metrics["conv_negociacao_pct"],
+            "conversao_compra_pct": metrics["conv_compra_pct"],
+            "agendamentos": appts,
+            "origens": origens,
+            "bairros": bairros,
+        }
+        user = f"Métricas do relatório:\n{resumo}"
         try:
-            narrative = invoke_text(system, user, model=model)
+            narrative = invoke_text(system, user, model=model, num_predict=700)
         except Exception as exc:  # noqa: BLE001
             narrative = (
                 f"No período ({periodo}) há {gerados} leads no funil, "
@@ -125,11 +138,17 @@ def _sales_suggestions(regioes: list[dict[str, Any]], model: str | None = None) 
         "Você é gerente comercial de uma imobiliária. "
         "Escreva sugestões práticas, em português, para aprimorar as vendas "
         "nas regiões mais procuradas. Use só os dados fornecidos. "
-        "Para cada região, dê 2 ações concretas (abordagem, estoque, visita ou anúncio). "
-        "Feche com uma prioridade da semana."
+        "Para cada região, escreva um parágrafo curto com 2 ações concretas "
+        "(abordagem, estoque, visita ou anúncio). Feche com a prioridade da semana, "
+        "em uma frase completa."
     )
     try:
-        return invoke_text(system, f"Regiões mais procuradas e estoque:\n{regioes}", model=model)
+        return invoke_text(
+            system,
+            f"Regiões mais procuradas e estoque:\n{regioes}",
+            model=model,
+            num_predict=900,
+        )
     except Exception:
         lines = ["Sugestões com base no estoque local (sem o modelo de linguagem):"]
         for row in regioes:

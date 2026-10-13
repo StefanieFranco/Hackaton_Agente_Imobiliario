@@ -361,7 +361,7 @@ def funnel_counts(
             if start:
                 q = q.where(Lead.created_at >= start)
             if end:
-                q = q.where(Lead.created_at <= end)
+                q = q.where(Lead.created_at < end)
             result[st] = int(session.scalar(q) or 0)
         result["total"] = sum(result.values())
         return result
@@ -541,6 +541,7 @@ def identify_conversation(conversation_id: str, nome: str, email: str) -> dict[s
                 "nome": other.nome,
                 "email": other.email,
                 "identified": True,
+                "returning": True,
             }
 
         lead.nome = nome
@@ -555,6 +556,7 @@ def identify_conversation(conversation_id: str, nome: str, email: str) -> dict[s
             "nome": lead.nome,
             "email": lead.email,
             "identified": True,
+            "returning": False,
         }
     finally:
         session.close()

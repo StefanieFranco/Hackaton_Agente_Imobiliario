@@ -5,6 +5,7 @@ from __future__ import annotations
 import sys
 from pathlib import Path
 
+import importlib
 import pandas as pd
 import streamlit as st
 
@@ -15,6 +16,11 @@ if str(ROOT) not in sys.path:
 from src.config import OLLAMA_MODEL
 from src.db import repository as repo
 from src.db.models import init_db
+import src.llm as llm_mod
+import src.services.reports as reports_mod
+
+importlib.reload(llm_mod)
+importlib.reload(reports_mod)
 from src.services.reports import build_report
 
 st.set_page_config(page_title="Relatórios", layout="wide")
@@ -47,6 +53,10 @@ if not report:
     st.info("Clique em **Gerar relatório** para ver KPIs e textos explicativos.")
     st.stop()
 
+st.caption(
+    f"Leads criados a partir de {report['inicio'][:10]}, antes de {report['fim'][:10]}."
+)
+
 m1, m2, m3, m4 = st.columns(4)
 m1.metric("Leads gerados (funil)", report["leads_gerados"])
 m2.metric("Interessados", report["leads_interessados"])
@@ -60,7 +70,12 @@ c2.metric("→ Negociação %", report["conv_negociacao_pct"])
 c3.metric("→ Compra %", report["conv_compra_pct"])
 
 st.subheader("Agendamentos no período")
-st.json(report["agendamentos"])
+agenda = report.get("agendamentos") or {}
+a1, a2, a3, a4 = st.columns(4)
+a1.metric("Agendados", agenda.get("agendado", 0))
+a2.metric("Realizados", agenda.get("realizado", 0))
+a3.metric("Não compareceu", agenda.get("no_show", 0))
+a4.metric("Cancelados", agenda.get("cancelado", 0))
 
 col_a, col_b = st.columns(2)
 with col_a:
@@ -73,9 +88,13 @@ with col_b:
         st.dataframe(pd.DataFrame(report["top_bairros"], columns=["bairro", "buscas"]))
 
 st.subheader("Análise narrativa")
-st.write(report.get("narrative") or "")
+st.markdown(report.get("narrative") or "")
 
 st.subheader("Sugestões para aprimorar vendas nas regiões mais procuradas")
 if report.get("regioes"):
-    st.dataframe(pd.DataFrame(report["regioes"]))
-st.write(report.get("suggestions") or "")
+    tabela = pd.DataFrame(report["regioes"])
+    for coluna in ("preco_medio", "preco_min", "preco_max"):
+        if coluna in tabela.columns:
+            tabela[coluna] = tabela[coluna].map(lambda valor: f"R$ {valor:,.0f}".replace(",", "X").replace(".", ",").replace("X", "."))
+    st.dataframe(tabela, hide_index=True)
+st.markdown(report.get("suggestions") or "")

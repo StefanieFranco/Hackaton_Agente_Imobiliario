@@ -21,3 +21,6 @@ class AgentState(TypedDict, total=False):
     reengagement: list[dict[str, Any]]
     final_response: str
     route: list[str]
+    chat_history: list[dict[str, str]]
+    response_truncated: bool
+    response_complete: bool

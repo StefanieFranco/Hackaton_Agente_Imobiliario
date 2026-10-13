@@ -28,6 +28,14 @@ seller_label = st.selectbox("Filtrar vendedor", ["Todos"] + list(seller_map.keys
 seller_id = None if seller_label == "Todos" else seller_map[seller_label]
 
 events = appointments_as_calendar_events(seller_id=seller_id)
+visita_id = st.query_params.get("visita")
+focus = None
+if visita_id:
+    for item in events:
+        if item["id"] == visita_id:
+            focus = item
+            break
+initial_date = focus["start"][:10] if focus else datetime.now().date().isoformat()
 calendar_options = {
     "initialView": "dayGridMonth",
     "headerToolbar": {
@@ -36,7 +44,10 @@ calendar_options = {
         "right": "dayGridMonth,timeGridWeek,listWeek",
     },
     "locale": "pt-br",
+    "initialDate": initial_date,
 }
+if focus:
+    st.caption(focus["title"])
 calendar(events=events, options=calendar_options, key="cal")
 
 st.subheader("Novo agendamento")
