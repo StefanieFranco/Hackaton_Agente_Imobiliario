@@ -2,6 +2,12 @@
 
 Sistema **multiagente** de imobiliária com **LangGraph + LangChain**, **RAG (ChromaDB)**, **Llama 3.1 8B via Ollama** (origem Hugging Face: [`meta-llama/Meta-Llama-3.1-8B-Instruct`](https://huggingface.co/meta-llama/Meta-Llama-3.1-8B-Instruct)), interface **Streamlit** e notebook de entrega.
 
+
+## Equipe
+* Marcelo Mendonça Lira - RM369892
+* Stefanie Barcelos de Franco - RM369893
+
+
 ## Funcionalidades
 
 - Chat multiagente: Supervisor, Busca, Avaliação, Jurídico, Financiamento, Consultor de Vendas, CRM, Síntese
